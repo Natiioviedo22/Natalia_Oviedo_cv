@@ -6,9 +6,8 @@ padding: 0px;
 #cabecera {
     height: 120px;
     background-color: black;
-    margin: 10px;
+    padding: 30px;
 }
-
 h1 {
     color: white;
     font-size: 50px;
@@ -36,6 +35,9 @@ main {
 h2 {
     color: white;
     Font-size:25px;
+}
+h4 { 
+    color: white;
 }
 footer {
     background-color: white
