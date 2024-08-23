@@ -1,2 +1,28 @@
 @charset "utf-8";
-/* 
+/* CSS Document */
+h1 {
+    color: white;
+    font-size: 70px;
+    padding: 30px;
+}
+body {
+    background-color: lightcoral;
+    padding: 20px;
+}
+header {
+    background-color: black;
+}
+
+
+
+a:hover {
+    color: rgb(30, 179, 179);
+    font-size: 1em;
+}
+a:link {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
