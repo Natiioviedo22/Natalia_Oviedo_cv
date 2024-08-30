@@ -4,7 +4,7 @@
 padding: 0px;
 }
 #cabecera {
-    height: 120px;
+    height: 120px; /* no recomendamos el uso de alturas fijas, mejor agregar algún padding */
     background-color: black;
     padding: 30px;
 }
@@ -18,16 +18,16 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .botonera a {
-    width: 100%;
-    height: 120px;
-    text-decoration: none;
+    width: 100%; /*esta propiedad no está funcionando*/
+    height: 120px; /*esta propiedad no está funcionando*/
+    text-decoration: none; /*no hace falta esta propiedad porque ya lo estás estableciendo en la línea 49*/
     color: #ffffff;
     padding: 10px;
     border: 1px solid white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /*no hace falta esta propiedad porque ya lo estás estableciendo en la línea 16*/
 }
 nav ul li {
-    display: inline-block;
+    display: inline-block; /* acordate que ahora vamos a dejar de usar inline para pasar a utilizar flexbox */
 }
 main {
     background-color: rgb(156, 46, 83);
@@ -40,14 +40,14 @@ h4 {
     color: white;
 }
 footer {
-    background-color: white
+    background-color: white /*guarda que con este color hay cosas que no se leen*/
 }
 a:hover {
     color: rgb(175, 41, 119);
     font-size: 1em;
 }
 a {
-    text-decoration: none;
+    text-decoration: none; /*cuando establecés algo tan general está bueno dejarlo arriba de todo para que, en caso de cambiar de opinión en un lugar específico, pueda reemplazarse la propiedad, lo mismo el hover de arriba*/
 }
 h6 {
     text-decoration: dotted;
