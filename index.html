@@ -10,7 +10,7 @@
                 <h1> /  Natalia oviedo </h1>
                     <nav class="botonera">         
                     <ul>
-                    <li><a href="#sobre-mi.html" target="_blank">Sobre mí</a></li>
+                    <li><a href="#sobre-mi.html" target="_blank">Sobre mí</a></li> <!-- cuando ponés un href tiene que ser a un archivo existente o a un id establecido en alguna etiqueta de abajo, acá estás mezclando las dos cosas, o es un id (#) o es otra pag (.html) -->
                     <li><a href="#proyectos.html" target="_blank">Mas proyectos</a></li>
                     <li><a href="#contacto.html" target="_blank">Contacto</a></li>
                 </ul> 
@@ -21,7 +21,7 @@
                 <h2>Sobre mi</h2>
                 <p>¡Hola! mi nombre es Natalia, actualmente me encuentro cursando la carrera de diseño y comunicación visual en la Universidad nacional de Lanús. Siempre estoy buscando nuevas formas de comunicar ideas de manera visualmente impactante, con una actitud constante de aprendizaje y evolución en cada proyecto que realizo.</p>
             </section>
-            <section>
+            <section> <!-- estás utilizando muchas secciones, estaría bueno agregarles un id a cada una para tener alguna referencia del contenido que tiene cada una -->
                 <h2>Educación</h2>
                 <p>UNLA/ Licenciatura el diseño y comunicacion visual (2020- actualidad)</p>
                 <p>Curso diseño ux/ui (cursando actualmente)</p>
@@ -37,7 +37,7 @@
             </section>
             <section>
                 <h2> Mis proyectos</h2>
-                <h4>Afiches</h4>
+                <h4>Afiches</h4> <!-- veo que no hay ningún h3 en todo el archivo y utilizás directamente h4, no es correcto utilizar las h según el tamaño que tienen porque eso después cambia en css, tienen que ser consecutivos-->
                 <img src="./img/afichesocial1.jpg" alt="Afiche social" width="150px" height="200px">
                 <img src="./img/afichecultural1.jpg" alt="Afiche Culturaal" width="150px" height="200px">
             </section>   
@@ -59,7 +59,7 @@
             <section>
                 <h2>Mas proyectos de diseño</h2>
                 <img src="./img/otrosproyectos1.jpg" alt="Proyectos" width="200px" height="150px">
-                <img src="./img/otrosproyectos2.jpg" alt="Proyectos" width="200px" height="150px">
+                <img src="./img/otrosproyectos2.jpg" alt="Proyectos" width="200px" height="150px"> <!-- guarda que el nombre del archivo tiene una mayúscula y no se está visualizando bien la imagen -->
             </section>
         </main>
         <footer>
@@ -71,7 +71,7 @@
             </ul>
         </div>
             <div>             
-                <h6>Todos los derechos reservados</h6> 
+                <h6>Todos los derechos reservados</h6> <!-- mismo comentario de las h, no es correcto utilizar un h6 si no existe previamente un h5 -->
                 <h6>Copyright © 2023 Natalia</h6>
             </div>
         </footer>
