@@ -1,14 +1,23 @@
 @charset "utf-8";
+
 /* CSS Document */
-*{margin:0px;
-padding: 0px;
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
 }
+
 @import url(<link rel="stylesheet" href="https://use.typekit.net/jrm8hty.css">);
+
 header {
     background-color: #EFE2D8
+        /* fondo header*/
 }
+
 h1 {
     font-size: 30px;
+    /* Tamaño tipo*/
     padding: 10px;
     color: #375D6D;
     font-family: "lato", sans-serif;
@@ -18,43 +27,235 @@ h1 {
 
 .botones {
     font-size: 15px;
-    display:flex;
-    flex-direction: column;
+    display: flex;
+    /*propiedad para flex-box*/
     justify-content: space-between;
     font-family: "lato", sans-serif;
-    font-weight: 400;
     font-style: normal;
-    list-style: none;
+    border-radius: 4px;
 
 
 }
-a {
-    text-decoration: none;
+
+.botones a {
+    /*propiedad para que el texto del link no tenga nada*/
     color: #375D6D;
     margin: 20px;
-}
-a:hover {
-    color: #a51481
-}
-.fondo-contenedor {
-    background-image: url('images/fondo.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    position: relative;
-    padding: 20px;
+    display: flex;
+    padding: 8px 12px;
+    /* Espacio interno del botón */
+    font-size: 14px;
+    /* Tamaño del texto */
+    color: #375D6D;
+    /* Color del texto */
+    background-color: transparent;
+    /* Sin color de fondo */
+    border: 1px solid #375D6D;
+    /* Borde fino de 1px */
+    border-radius: 4px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cambia el cursor cuando se pasa sobre el botón */
 }
 
+.botones a:hover {
+    color: #000000
+        /*cambio de color solo botones header (para que sea para todos poner solo a)*/
+}
+
+/*hasta aca el header*/
+
+/*main*/
 
 main {
     background-color: #375D6D
 }
-div h2 {
+.inicio {
+        height: 100vh;
+        }
+
+
+
+.flor-img {
+    margin-right: 10px;
+    /* Espacio entre la imagen y el texto */
+    width: 50px;
+    /* amaño de la imagen según sea necesario */
+    padding: 30px;
+    /* Mantiene la proporción de la imagen */
+}
+
+.mi-nombre {
     font-family: "lato", sans-serif;
-    font-family: "lato", sans-serif;
-    font-weight: 300;
     font-style: italic;
     color: #EFE2D8;
-    font-size: 60px;
+    font-size: 80px;
+    display: flex;
+    justify-content: center; /* nombre al centro*/
+    /* espacio izq*/
+    padding-top: 80px;
+    letter-spacing: 4px; /*espaciado de letras*/
+}
 
+/*aca empieza mi main*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/*section sobre mi*/
+
+/*pantalla completa*/
+#sobre-mi {
+    height: 100vh;
+    background-color: #EFE2D8; 
+}
+
+
+.presentacion {
+
+/* padding: 30px 20px 80px 20px ; Espacio interno */
+display:flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+/*box-sizing: border-box; (Incluye el padding y el borde en el ancho total)*/
+}
+/* titulo sobre mi */
+
+.presentacion h2 {
+    color: #375D6D;
+    letter-spacing: 4px;
+    font-family: "lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    margin-top: 40px;
+    }
+    
+/*texto de presentacion*/
+.presentacion p {
+    color: #375D6D;
+    font-family: "lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+    max-width: 800px; /*es el ancho  maximo de la caja siempre va en p */ 
+    margin-top: 100px;
+}
+
+
+
+.informacion {
+    display:flex;
+    justify-content: center;
+}
+
+
+
+
+.info {  /* modificaciones de p y la lista de herramientas*/
+    color: #375D6D;
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    border: 1px solid #375D6D;  /*caja contenedora*/
+    width:400px;  /*tamaño caja*/
+    height: 100px;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 30px;
+    margin-top: 100px;
+    }
+
+/*section proyectos*/
+    #mis-proyectos {
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 20% ;
+    }
+
+.image {
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: baseline;
+
+}
+#mis-proyectos h2 {
+    letter-spacing: 4px;
+    font-family: "lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #EFE2D8;
+}
+
+
+
+.proyectos-img h4{
+    font-family: "lato", sans-serif; /*ligth italic*/
+font-weight: 300;
+font-style: italic;
+font-size: 25px;
+color: #EFE2D8;
+margin: 20px;
+padding: 20px;
+text-align: left;
+}
+.proyectos-img  img{
+    display:flex; 
+    flex-direction: row;
+    padding: 30px;
+    justify-content: space-around;
+    margin: 0 20px;
+}
+
+/*otros-ejemplos*/
+
+.otros-ejemplos {
+    height: 100vh;
+    background-color: #EFE2D8
+}
+
+footer {
+    background-color: #EFE2D8;
+}
+
+#contacto {
+    color: #375D6D;
+    margin: 20px;
+    display: flex;
+    font-size: 14px;
+    /* Tamaño del texto */
+    color: #375D6D;
+    /* Color del texto */
+    cursor: pointer;
+    /* Cambia el cursor cuando se pasa sobre el botón */
+}
+    #contacto li a {
+        color: #375D6D;
+        margin: 20px;
+        display: flex;
+        font-size: 14px;
+        /* Tamaño del texto */
+        color: #375D6D;
+        /* Color del texto */
+        cursor: pointer;
+        /* Cambia el cursor cuando se pasa sobre el botón */
+        display: flex;
+
+}
+
+.copy {
+    color: #375D6D;
+    font-family: "lato", sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    display: flex;
+    flex-direction: ;
 }
