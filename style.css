@@ -22,20 +22,21 @@ h1 {
     /* Tamaño tipo*/
     padding: 10px;
     color: #375D6D;
-    font-family: "lato", sans-serif;
-    font-weight: 300;
+    font-family: "lato", sans-serif; /* estás aplicando a todos los lugares esta propiedad, te va a convenir 
+ aplicarlo directamente en generales */
+    font-weight: 300; 
     font-style: italic;
 }
 
 .botones {
-    font-size: 15px;
+    font-size: 15px; /* no hace falta */
     display: flex;
     /*propiedad para flex-box*/
     justify-content: space-between;
     font-family: "lato", sans-serif;
-    font-style: normal;
-    border-radius: 4px;
-
+    font-style: normal; /* no hace falta */
+    border-radius: 4px; /* no va acá esta propiedad */
+/* guarda con dejar espacios en blanco */
 
 }
 .baner {
@@ -50,9 +51,9 @@ h1 {
     /* Espacio interno del botón */
     font-size: 14px;
     /* Tamaño del texto */
-    color: #375D6D;
+    color: #375D6D; /* esto lo estás repitiendo en la línea 47 */
     /* Color del texto */
-    background-color: transparent;
+    background-color: transparent; /* no hace falta */
     /* Sin color de fondo */
     border: 1px solid #375D6D;
     /* Borde fino de 1px */
@@ -106,7 +107,7 @@ main {
 
 /*aca empieza mi main*/
 
-main {
+main { /* esto lo estás repitiendo de la línea 75, no uses el mismo selector en dos lugares distintos */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -118,7 +119,7 @@ main {
 /*pantalla completa*/
 #sobre-mi {
     height: 100vh;
-    background-color: #EFE2D8;
+    background-color: #EFE2D8; /* a esta sección le vendría re bien dejarla centrada con algo de flex */
 }
 
 
@@ -126,7 +127,7 @@ main {
 
     /* padding: 30px 20px 80px 20px ; Espacio interno */
     display: flex;
-    justify-content: center;
+    justify-content: center; /* no hace falta */
     flex-direction: column;
     align-items: center;
     /*box-sizing: border-box; (Incluye el padding y el borde en el ancho total)*/
@@ -140,8 +141,8 @@ main {
     font-family: "lato", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 30px;
-    margin-top: 40px;
+    font-size: 30px; /* como ajuste de diseño, el tamaño del texto debería ser igual o más chico que el título para que se sienta balanceado, o que la diferencia sea más marcada para que no se sienta como un error */
+    margin-top: 40px; /* como ajuste de diseño, este espacio debería ser un poco más chico*/
 }
 
 /*texto de presentacion*/
@@ -162,13 +163,13 @@ main {
 }
 
 
-
+/* guarda con dejar muchos espacios en blanco */
 
 .info {
     /* modificaciones de p y la lista de herramientas*/
     color: #375D6D;
     font-family: "lato", sans-serif;
-    font-weight: 400;
+    font-weight: 400; /* no hace falta */
     font-style: italic;
     border: 1px solid #375D6D;
     /*caja contenedora*/
@@ -178,14 +179,14 @@ main {
     border-radius: 30px;
     margin: 10px;
     padding: 30px;
-    margin-top: 100px;
+    margin-top: 100px; /* si querés que todos los elementos estén separados de forma equidistante lo mejor es utilizar gap */
 }
 
 /*section proyectos*/
 #mis-proyectos {
-    margin-top: 20 px;
+    margin-top: 20 px; /* no se toma esta propiedad porque hay un espacio entre el número y la unidad de medida */
     display: flex;
-    justify-content: center;
+    justify-content: center; /* no hace falta */
     flex-direction: column;
     align-items: center;
 }
@@ -193,16 +194,16 @@ main {
 .image {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    align-items: baseline;
+    justify-content: space-evenly; /* no hace falta */
+    align-items: baseline; /* solo puede haber un align items */
 
 }
 
 #mis-proyectos h2 {
     letter-spacing: 4px;
     font-family: "lato", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    font-weight: 700; /* no hace falta */
+    font-style: normal; /* no hace falta */
     color: #EFE2D8;
 }
 
@@ -217,7 +218,7 @@ main {
     color: #EFE2D8;
     margin: 20px;
     padding: 20px;
-    text-align: left;
+    text-align: left; /* no hace falta */
 }
 
 .proyectos-img img {
