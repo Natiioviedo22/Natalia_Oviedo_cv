@@ -8,180 +8,153 @@
     padding: 0px;
     text-decoration: none;
     list-style: none;
+    font-family: "elza", sans-serif;
 }
 
-@import url(<link rel="stylesheet" href="https://use.typekit.net/jrm8hty.css">);
+@import url(<link rel="stylesheet" href="https://use.typekit.net/wqz7tsk.css">);
 
 header {
-    background-color: #EFE2D8
+    background-color: #D78FC6
         /* fondo header*/
 }
 
-h1 {
-    font-size: 30px;
-    /* Tamaño tipo*/
-    padding: 10px;
-    color: #375D6D;
-    font-family: "lato", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-}
 
 .botones {
-    font-size: 15px;
     display: flex;
     /*propiedad para flex-box*/
-    justify-content: space-between;
-    font-family: "lato", sans-serif;
-    font-style: normal;
-    border-radius: 4px;
+    justify-content: space-around;
+    padding-top: 20px;
+}
 
 
-}
-.baner {
-    max-width: 100%;
-}
+
 .botones a {
     /*propiedad para que el texto del link no tenga nada*/
-    color: #375D6D;
     margin: 20px;
+    padding: 15px 20px;     /* Espacio interno del botón */
     display: flex;
-    padding: 8px 12px;
+    font-size: 20px;     /* Tamaño del texto */
+    color: #B34F93;
+    background-color: #F7EBF5;
+    border-radius: 40px;
+    cursor: pointer;
+    /* Cambia el cursor cuando se pasa sobre el botón */
+    letter-spacing: 1px;
+
+}
+.botones a:hover{
+    margin: 20px;
+    padding: 15px 20px;
     /* Espacio interno del botón */
-    font-size: 14px;
+    font-size: 20px;
     /* Tamaño del texto */
-    color: #375D6D;
+    color: #D78FC6;
     /* Color del texto */
-    background-color: transparent;
+    background-color: #7F3565;
     /* Sin color de fondo */
-    border: 1px solid #375D6D;
     /* Borde fino de 1px */
-    border-radius: 4px;
+    border-radius: 40px;
     /* Bordes redondeados */
     cursor: pointer;
     /* Cambia el cursor cuando se pasa sobre el botón */
+    letter-spacing: 1px;
 }
 
-.botones a:hover {
-    color: #000000
-        /*cambio de color solo botones header (para que sea para todos poner solo a)*/
+.baner {
+    max-width: 100%;
 }
-
 /*hasta aca el header*/
 
-/*main*/
+
+
+/*COMIENZO DE MAIN 1 */
 
 main {
-    background-color: #375D6D
+    background-color: #D78FC6
 }
 
 .inicio {
     height: 100vh;
 }
 
-
-
-.flor-img {
-    margin-right: 10px;
-    /* Espacio entre la imagen y el texto */
-    width: 50px;
-    /* amaño de la imagen según sea necesario */
-    padding: 30px;
-    /* Mantiene la proporción de la imagen */
-}
-
-.mi-nombre {
-    font-family: "lato", sans-serif;
-    font-style: italic;
-    color: #EFE2D8;
+.inicio p {
+    font-weight: 700;
+    font-style: normal;
+    color: #F7EBF5;
     font-size: 80px;
     display: flex;
-    justify-content: center;
-    /* nombre al centro*/
-    /* espacio izq*/
-    padding-top: 80px;
+    justify-content: center;/* nombre al centro*/
     letter-spacing: 4px;
     /*espaciado de letras*/
 }
 
-/*aca empieza mi main*/
+/*COMIENZO DE MAIN 2 */
 
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-
-/*section sobre mi*/
 
 /*pantalla completa*/
-#sobre-mi {
+#sobre-mi{
     height: 100vh;
-    background-color: #EFE2D8;
+    background-color: #F7EBF5;
+}
+/*cajas*/
+#sobre-mi {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
-
-.presentacion {
-
-    /* padding: 30px 20px 80px 20px ; Espacio interno */
+/* flex-box*/
+.caja-presentacion {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    /*box-sizing: border-box; (Incluye el padding y el borde en el ancho total)*/
+    flex-direction: row;
+    gap:60px;
 }
 
 /* titulo sobre mi */
-
-.presentacion h2 {
-    color: #375D6D;
-    letter-spacing: 4px;
-    font-family: "lato", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 30px;
-    margin-top: 40px;
+.caja-presentacion h2 { 
+    color: #B34F93;
+    font-size: 80px
 }
 
-/*texto de presentacion*/
-.presentacion p {
-    color: #375D6D;
-    font-family: "lato", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 30px;
-    max-width: 800px;
-    /*es el ancho  maximo de la caja siempre va en p */
-    margin-top: 100px;
+/* imagen*/
+.caja-presentacion img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-top: 20px;
 }
 
-.informacion {
-    display: flex;
-    justify-content: center;
+/*PARRAFO de presentacion*/
+.caja-presentacion p {
+    font-weight:400;
+    font-size: 35px;
+    color: #B34F93;
+    max-width: 950px;
+    margin-bottom: 20px;
 }
 
 
+/*COMIENZO MAIN 3- DATOS*/
 
+/* flex.box estudios*/
 
-.info {
-    /* modificaciones de p y la lista de herramientas*/
-    color: #375D6D;
-    font-family: "lato", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-    border: 1px solid #375D6D;
-    /*caja contenedora*/
-    width: 400px;
-    /*tamaño caja*/
-    height: 100px;
-    border-radius: 30px;
-    margin: 10px;
-    padding: 30px;
-    margin-top: 100px;
+#datos{
+    height: 100vh;
+background-color: #F7EBF5;
+color: #B34F93;
+display: flex;
+justify-content: space-evenly;
+align-items:center;
 }
 
-/*section proyectos*/
+#datos h2 {
+    font-size: 48;
+}
+
+
+
+
+/*SECCION proyectos*/
 #mis-proyectos {
     margin-top: 20 px;
     display: flex;
@@ -200,21 +173,19 @@ main {
 
 #mis-proyectos h2 {
     letter-spacing: 4px;
-    font-family: "lato", sans-serif;
     font-weight: 700;
     font-style: normal;
-    color: #EFE2D8;
+    color: #F7EBF5;
 }
 
 
 /*imagenes del proyecto*/
 .proyectos-img h4 {
-    font-family: "lato", sans-serif;
     /*ligth italic*/
     font-weight: 300;
     font-style: italic;
     font-size: 25px;
-    color: #EFE2D8;
+    color: #F7EBF5;
     margin: 20px;
     padding: 20px;
     text-align: left;
@@ -225,14 +196,14 @@ main {
     flex-direction: row;
     padding: 30px;
     justify-content: space-around;
-    margin left: 20px;
+    margin-left: 20px;
     border-radius: 5px;
 }
 
 
 
 footer {
-    background-color: #EFE2D8;
+    background-color: #F7EBF5;
 }
 
 
@@ -241,7 +212,6 @@ footer {
     font-family: "lato", sans-serif;
     font-weight: 400;
     font-style: italic;
-    display: flex;
 }
 
 .botones-redes a {
