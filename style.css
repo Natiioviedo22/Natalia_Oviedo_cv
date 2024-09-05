@@ -51,7 +51,7 @@ header {
     /* Espacio interno del botón */
     font-size: 20px;
     /* Tamaño del texto */
-    color: #f7ecf5;
+    color: #F1D9ED;
     /* Color del texto */
     background-color: #B34F93;
     /* Sin color de fondo */
@@ -73,7 +73,7 @@ header {
 
 /*MAIN*/
 .main {
-    background-color: #f7ecf5;
+    background-color: #F1D9ED
 }
 
 /*COMIENZO DE SECCION 1 */
@@ -174,7 +174,7 @@ header {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra opcional para mayor profundidad */
     max-width: 400px; /* Anchura máxima para mantener el diseño */
     margin: 0 auto; /* Centrar el contenedor horizontalmente */
-    background-color: white; /* Color de fondo si lo deseas */
+    background-color: #F1D9ED; /* Color de fondo si lo deseas */
 }
 
 .logos, .idiomas{
@@ -258,12 +258,14 @@ header {
     background-color: #B34F93;
     width: 100%;
     text-align: center;
-    color: #F7ECF5;
+    color: #F1D9ED;
+    font-size: 20px;
 }
 
 .despedida h2 { 
-    font-size: 60px;
-    font-weight: 400;
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 
@@ -285,7 +287,7 @@ header {
 .copy {
     background-color: #D78FC6;
     width: 100%;
-    color: #F7ECF5; 
+    color: #F1D9ED; 
     font-size: 20px;
     display: flex;
     justify-content: space-around;
