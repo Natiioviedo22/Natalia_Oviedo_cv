@@ -10,11 +10,9 @@
     list-style: none;
     font-family: "elza", sans-serif;
     font-weight: 400;
-    cursor: url(/img/cursor/SVG/Recurso\ 17brillo.png) ,auto;
 }
 
 @import url(<link rel="stylesheet" href="https://use.typekit.net/wqz7tsk.css">);
-
 
 
 header {
@@ -40,7 +38,7 @@ header {
     font-size: 20px;
     /* Tamaño del texto */
     color: #B34F93;
-    background-color: #FAECF5;
+    background-color: #F1D9ED;
     border-radius: 40px;
     cursor: pointer;
     /* Cambia el cursor cuando se pasa sobre el botón */
@@ -111,6 +109,7 @@ header {
 /*pantalla completa*/
 #sobre-mi {
     height: 100vh;
+    
 }
 
 /*cajas*/
@@ -158,25 +157,36 @@ header {
 
 
 
-
 #datos {
-    height: 100vh;
+    height: 80vh;
     color: #B34F93;
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+    gap:20px;
 }
 .informacion-personal {
-    padding: 30px;
+    padding: 40px;
+    border: 4px solid #D26CA7; /* Borde delineado de 2px con el color deseado */
+    border-radius: 40px; /* Borde redondeado */
+    padding: 40px; /* Espacio interno para que el contenido no quede pegado al borde */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra opcional para mayor profundidad */
+    max-width: 400px; /* Anchura máxima para mantener el diseño */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+    background-color: white; /* Color de fondo si lo deseas */
 }
 
 .logos, .idiomas{
     display: flex;
-    gap: 30px;
 }
 .informacion-personal h3{
-    margin: 40px 0 ;
+    margin: 20px 0 ;
     font-size: 40px;
     font-weight: 700;
+    margin-top: 90px;
+    gap: 30px;
+
 }
 
 .negrita {
@@ -186,6 +196,7 @@ header {
 #datos li {
     font-size: 20px;
     max-width: 650px;
+    margin-right: 10px;
 }
 .idiomas {
     display: flex;
@@ -229,12 +240,14 @@ header {
     border-radius: 30px;
     cursor: pointer;
     transition: filter 0.5s ease;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Sombra opcional para mayor profundidad */
 }
 #mis-proyectos img:hover {
     transform: scale(1.1);
     transition: 0.2s;
     filter: none;
     border: 5px solid #B34F93;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1); /* Sombra opcional para mayor profundidad */
 }
 /*COMIENZO footer 4- PROYECTOS*/
 
@@ -286,7 +299,7 @@ header {
     right: 0;
     transform: translateY(-50%);
     background-color: #B34F93;
-    padding: 15px;
+    padding: 12px;
     display: flex;
     flex-direction: column;
 	border-radius: 25px;
