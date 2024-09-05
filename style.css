@@ -14,7 +14,9 @@
 
 @import url(<link rel="stylesheet" href="https://use.typekit.net/wqz7tsk.css">);
 
-
+body {
+    cursor: url (img/cursor/brillo.png), auto;
+}
 header {
     background-color: #D78FC6;/* fondo header*/
     }
@@ -49,7 +51,7 @@ header {
     /* Tamaño del texto */
     color: #F1D9ED;
     /* Color del texto */
-    background-color: #B34F93;
+    background-color: #7F3565;
     /* Sin color de fondo */
     /* Borde fino de 1px */
     border-radius: 40px;
@@ -250,11 +252,15 @@ header {
     color: #F1D9ED;
     font-size: 20px;
 }
+.despedida p {
+    letter-spacing:1px;
+}
 
 .despedida h2 { 
     font-size: 70px;
     font-weight: 700;
     margin-bottom: 10px;
+    color:#F1D9ED;
 }
 .mje {
     display: flex;
@@ -277,7 +283,7 @@ header {
 }
 .mje img:hover{
     transform: scale(1.1);
-    transition: 0.3s;
+    transition: 0.2s;
     filter:none;
 }
 
@@ -285,7 +291,7 @@ header {
 .copy {
     background-color: #D78FC6;
     width: 100%;
-    color: #F1D9ED; 
+    color: #7F3565;
     font-size: 20px;
     display: flex;
     justify-content: space-around;
