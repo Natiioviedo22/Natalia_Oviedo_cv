@@ -9,17 +9,18 @@
     text-decoration: none;
     list-style: none;
     font-family: "elza", sans-serif;
-    font-weight:400;
-    font-style:normal;
+    font-weight: 400;
+    cursor: url(/img/cursor/SVG/Recurso\ 17brillo.png) ,auto;
 }
 
 @import url(<link rel="stylesheet" href="https://use.typekit.net/wqz7tsk.css">);
 
-header {
-    background-color: #D78FC6
-        /* fondo header*/
-}
 
+
+header {
+    background-color: #D78FC6;
+        /* fondo header*/
+        }
 
 .botones {
     display: flex;
@@ -33,26 +34,28 @@ header {
 .botones a {
     /*propiedad para que el texto del link no tenga nada*/
     margin: 20px;
-    padding: 15px 20px;     /* Espacio interno del botón */
+    padding: 15px 20px;
+    /* Espacio interno del botón */
     display: flex;
-    font-size: 20px;     /* Tamaño del texto */
+    font-size: 20px;
+    /* Tamaño del texto */
     color: #B34F93;
-    background-color: #F7EBF5;
+    background-color: #FAECF5;
     border-radius: 40px;
     cursor: pointer;
     /* Cambia el cursor cuando se pasa sobre el botón */
     letter-spacing: 1px;
-
 }
-.botones a:hover{
+
+.botones a:hover {
     margin: 20px;
     padding: 15px 20px;
     /* Espacio interno del botón */
     font-size: 20px;
     /* Tamaño del texto */
-    color: #D78FC6;
+    color: #f7ecf5;
     /* Color del texto */
-    background-color: #7F3565;
+    background-color: #B34F93;
     /* Sin color de fondo */
     /* Borde fino de 1px */
     border-radius: 40px;
@@ -60,43 +63,56 @@ header {
     cursor: pointer;
     /* Cambia el cursor cuando se pasa sobre el botón */
     letter-spacing: 1px;
+    font-weight: 700;
 }
 
 .baner {
     max-width: 100%;
+    margin-top: 20px;
 }
+
 /*hasta aca el header*/
 
-
-
-/*COMIENZO DE MAIN 1 */
-
-main {
-    background-color: #D78FC6
+/*MAIN*/
+.main {
+    background-color: #f7ecf5;
 }
+
+/*COMIENZO DE SECCION 1 */
+
 
 .inicio {
     height: 100vh;
+    background-color: #D78FC6
 }
 
 .inicio h1 {
     font-weight: 700;
-    color: #F7EBF5;
+    color: #F1D9ED;
     font-size: 128px;
     display: flex;
-    justify-content: center;/* nombre al centro*/
+    margin-top: 30px;
+    justify-content: center;
+    /* nombre al centro*/
     letter-spacing: 4px;
     /*espaciado de letras*/
+    transition: transform 0.5s ease-in-out;
 }
 
-/*COMIENZO DE MAIN 2 */
+.inicio h1:hover {
+    transform: scale(1.2);
+}
+
+
+
+/*COMIENZO SECCION 2- DATOS*/
 
 
 /*pantalla completa*/
-#sobre-mi{
+#sobre-mi {
     height: 100vh;
-    background-color: #F7EBF5;
 }
+
 /*cajas*/
 #sobre-mi {
     display: flex;
@@ -109,14 +125,14 @@ main {
 .caja-presentacion {
     display: flex;
     flex-direction: row;
-    gap:60px;
+    gap: 60px;
 }
 
 /* titulo sobre mi */
-.caja-presentacion h2 { 
+.caja-presentacion h2 {
     color: #B34F93;
     font-size: 80px;
-    font-weight:700;
+    font-weight: 700;
 }
 
 /* imagen*/
@@ -128,7 +144,7 @@ main {
 
 /*PARRAFO de presentacion*/
 .caja-presentacion p {
-    font-weight:400;
+    font-weight: 400;
     font-size: 35px;
     color: #B34F93;
     max-width: 950px;
@@ -136,97 +152,144 @@ main {
 }
 
 
-/*COMIENZO MAIN 3- DATOS*/
+/*COMIENZO SECCION 3- DATOS*/
 
 /* flex.box estudios*/
 
-#datos{
+
+
+
+#datos {
     height: 100vh;
-background-color: #F7EBF5;
-color: #B34F93;
-display: flex;
-justify-content: space-evenly;
-align-items:center;
-}
-
-#datos h2 {
-    font-size: 80px;
-}
-
-.informacion-personal{
-    gap: 400px;
-}
-.otros-datos {
-    gap: 400px;
-
-}
-
-
-/*SECCION proyectos*/
-#mis-proyectos {
-    background-color: #F7EBF5;
-    margin-top: 20 px;
+    color: #B34F93;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-
+    justify-content: space-evenly
 }
-
-.image {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    align-items: baseline;
-
-}
-
-#mis-proyectos h3 {
-    letter-spacing: 4px;
-    font-weight: 700;
-    font-style: normal;
-    color: #F7EBF5;
-}
-
-
-/*imagenes del proyecto*/
-.proyectos-muestra h2 {
-    /*ligth italic*/
-    font-weight: 300;
-    font-style: italic;
-    font-size: 25px;
-    color: #F7EBF5;
-    margin: 20px;
-    padding: 20px;
-    text-align: left;
-}
-
-.proyectos-muestra img {
-    display: flex;
-    flex-direction: row;
+.informacion-personal {
     padding: 30px;
+}
+
+.logos, .idiomas{
+    display: flex;
+    gap: 30px;
+}
+.informacion-personal h3{
+    margin: 40px 0 ;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.negrita {
+    font-weight: 700;
+    margin-top: 10px;
+}
+#datos li {
+    font-size: 20px;
+    max-width: 650px;
+}
+.idiomas {
+    display: flex;
+    column-gap: 30PX;;
+}
+
+/*COMIENZO SECCION 4- PROYECTOS*/
+#mis-proyectos {
+    height: 100vh;
+    color: #B34F93;
+    padding: 100px;  
+}
+
+
+.catalogo1 {
+    display: flex;
+    align-items: flex-end;
+    gap: 60px;
+}
+
+.catalogo2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-top: 130px;
+    gap: 60px;
+}
+
+#mis-proyectos p {
+    font-size: 80px;
+    font-weight: 700;
+    margin: 0px 170px 0px 170px;
+}
+
+#mis-proyectos h2 {
+    font-weight: 600;
+    text-align: right;
+    margin-left: 95px;
+}
+#mis-proyectos img {
+    border-radius: 30px;
+    cursor: pointer;
+    transition: filter 0.5s ease;
+}
+#mis-proyectos img:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+    filter: none;
+    border: 5px solid #B34F93;
+}
+/*COMIENZO footer 4- PROYECTOS*/
+
+
+.despedida {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #B34F93;
+    width: 100%;
+    text-align: center;
+    color: #F7ECF5;
+}
+
+.despedida h2 { 
+    font-size: 60px;
+    font-weight: 400;
+}
+
+
+.mensaje {
+    color: #B34F93;
+    display: flex;
     justify-content: space-around;
-    margin-left: 20px;
-    border-radius: 5px;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-/*SECCION proyectos*/
+.mensaje h3 { 
+    font-size: 40px;
+    font-weight: 700;
+}
 
-footer {
+
+.copy {
     background-color: #D78FC6;
+    width: 100%;
+    color: #F7ECF5; 
+    font-size: 20px;
     display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+.aside{
+    position: fixed;
+    top: 23%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #B34F93;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+	border-radius: 25px;
+    margin-right: 5px;
 }
 
-
-.redes-1 h2 {
-    font-weight: 400;
-    font-style: italic;
-}
-
-.botones-redes a {
-    display: flex;
-
-    font-weight: 400;
-    font-style: italic;
-    display: flex;
-}
