@@ -16,18 +16,14 @@
 
 
 header {
-    background-color: #D78FC6;
-        /* fondo header*/
-        }
+    background-color: #D78FC6;/* fondo header*/
+    }
 
 .botones {
     display: flex;
-    /*propiedad para flex-box*/
     justify-content: space-around;
     padding-top: 20px;
 }
-
-
 
 .botones a {
     /*propiedad para que el texto del link no tenga nada*/
@@ -115,7 +111,6 @@ header {
 /*cajas*/
 #sobre-mi {
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
@@ -123,7 +118,6 @@ header {
 /* flex-box*/
 .caja-presentacion {
     display: flex;
-    flex-direction: row;
     gap: 60px;
 }
 
@@ -132,22 +126,22 @@ header {
     color: #B34F93;
     font-size: 80px;
     font-weight: 700;
+    letter-spacing:3px;
+    line-height: 1.5;
 }
 
 /* imagen*/
 .caja-presentacion img {
     max-width: 100px;
     max-height: 100px;
-    margin-top: 20px;
 }
 
 /*PARRAFO de presentacion*/
 .caja-presentacion p {
-    font-weight: 400;
     font-size: 35px;
     color: #B34F93;
     max-width: 950px;
-    margin-bottom: 20px;
+    padding-top: 32px;
 }
 
 
@@ -161,30 +155,27 @@ header {
     height: 80vh;
     color: #B34F93;
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    align-content: space-around;
-    gap:20px;
+    align-content: space-between;
 }
 .informacion-personal {
-    padding: 40px;
-    border: 4px solid #D26CA7; /* Borde delineado de 2px con el color deseado */
+    border: 4px solid #D26CA7; /* Borde delineado de 2px */
     border-radius: 40px; /* Borde redondeado */
-    padding: 30px; /* Espacio interno para que el contenido no quede pegado al borde */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra opcional para mayor profundidad */
-    max-width: 400px; /* Anchura máxima para mantener el diseño */
-    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+    padding: 30px; /* Espacio interno  */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra  */
+    max-width: 500px; /* Anchura máxima del contenedor*/
+    margin: 10px auto; /* Centrar el contenedor horizontalmente */
     background-color: #F1D9ED; /* Color de fondo si lo deseas */
 }
 
-.logos, .idiomas{
+.logos {
     display: flex;
 }
 .informacion-personal h3{
-    margin: 20px 0 ;
+    margin: 15px 0 ;
     font-size: 40px;
     font-weight: 700;
-    margin-top: 90px;
+    margin-top: 40px;
 
 }
 
@@ -251,7 +242,7 @@ header {
 
 
 .despedida {
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 30px;
     background-color: #B34F93;
     width: 100%;
@@ -265,8 +256,12 @@ header {
     font-weight: 700;
     margin-bottom: 10px;
 }
+.mje {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
 
-
+}
 .mensaje {
     color: #B34F93;
     display: flex;
@@ -279,6 +274,11 @@ header {
 .mensaje h3 { 
     font-size: 40px;
     font-weight: 700;
+}
+.mje img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    filter:none;
 }
 
 
@@ -299,7 +299,7 @@ header {
     right: 0;
     transform: translateY(-50%);
     background-color: #B34F93;
-    padding: 12px;
+    padding: 11px;
     display: flex;
     flex-direction: column;
 	border-radius: 25px;
