@@ -15,11 +15,13 @@
 @import url(<link rel="stylesheet" href="https://use.typekit.net/wqz7tsk.css">);
 
 body {
-    cursor: url (img/cursor/brillo.png), auto;
+    cursor: url (img/cursor.png)
 }
+
 header {
-    background-color: #D78FC6;/* fondo header*/
-    }
+    background-color: #D78FC6;
+    /* fondo header*/
+}
 
 .botones {
     display: flex;
@@ -62,13 +64,73 @@ header {
     font-weight: 700;
 }
 
+
+
+
+
+
+
+*/
+
+/*hasta aca el header*/
+.baner.img {
+    position: relative;
+    /* Hace que los hijos puedan posicionarse absolutamente */
+}
+
 .baner {
     max-width: 100%;
     margin-top: 20px;
 }
 
-/*hasta aca el header*/
 
+.brillo {
+    left: 100px;
+    /* Ajusta según tu diseño */
+    transform: translate(608px, -330px);
+}
+
+.brillo2 {
+    left: 100px;
+    /* Ajusta según tu diseño */
+    transform: translate(1218px, -330px);
+}
+
+/*ANIMACIONES*/
+.brillo, .brillo2 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation: pulse 1s infinite alternate;
+}
+
+.brillo {
+    top: 22%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+}
+
+.brillo2 {
+    top: 22%;
+    left: 67%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.2;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.8);
+        opacity: 0.2;
+    }
+}
 /*MAIN*/
 .main {
     background-color: #F1D9ED
@@ -79,7 +141,8 @@ header {
 
 .inicio {
     height: 100vh;
-    background-color: #D78FC6
+    background-color: #D78FC6;
+    position: relative;
 }
 
 .inicio h1 {
@@ -107,7 +170,7 @@ header {
 /*pantalla completa*/
 #sobre-mi {
     height: 100vh;
-    
+
 }
 
 /*cajas*/
@@ -128,7 +191,7 @@ header {
     color: #B34F93;
     font-size: 80px;
     font-weight: 700;
-    letter-spacing:3px;
+    letter-spacing: 3px;
     line-height: 1.5;
 }
 
@@ -160,21 +223,30 @@ header {
     flex-wrap: wrap;
     align-content: space-between;
 }
+
 .informacion-personal {
-    border: 4px solid #D26CA7; /* Borde delineado de 2px */
-    border-radius: 40px; /* Borde redondeado */
-    padding: 30px; /* Espacio interno  */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra  */
-    max-width: 500px; /* Anchura máxima del contenedor*/
-    margin: 10px auto; /* Centrar el contenedor horizontalmente */
-    background-color: #F1D9ED; /* Color de fondo si lo deseas */
+    border: 4px solid #D26CA7;
+    /* Borde delineado de 2px */
+    border-radius: 40px;
+    /* Borde redondeado */
+    padding: 30px;
+    /* Espacio interno  */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra  */
+    max-width: 500px;
+    /* Anchura máxima del contenedor*/
+    margin: 10px auto;
+    /* Centrar el contenedor horizontalmente */
+    background-color: #F1D9ED;
+    /* Color de fondo si lo deseas */
 }
 
 .logos {
     display: flex;
 }
-.informacion-personal h3{
-    margin: 15px 0 ;
+
+.informacion-personal h3 {
+    margin: 15px 0;
     font-size: 40px;
     font-weight: 700;
     margin-top: 40px;
@@ -185,11 +257,13 @@ header {
     font-weight: 700;
     margin-top: 10px;
 }
+
 #datos li {
     font-size: 20px;
     max-width: 650px;
     margin-right: 10px;
 }
+
 .idiomas {
     display: flex;
 }
@@ -198,7 +272,7 @@ header {
 #mis-proyectos {
     height: 100vh;
     color: #B34F93;
-    padding: 100px;  
+    padding: 100px;
 }
 
 
@@ -227,19 +301,25 @@ header {
     text-align: right;
     margin-left: 95px;
 }
+
 #mis-proyectos img {
     border-radius: 30px;
     cursor: pointer;
     transition: filter 0.5s ease;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Sombra opcional para mayor profundidad */
+    border: 2px solid #B34F93;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra opcional para mayor profundidad */
 }
+
 #mis-proyectos img:hover {
     transform: scale(1.1);
     transition: 0.2s;
     filter: none;
     border: 5px solid #B34F93;
-    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1); /* Sombra opcional para mayor profundidad */
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra opcional para mayor profundidad */
 }
+
 /*COMIENZO footer 4- PROYECTOS*/
 
 
@@ -252,22 +332,25 @@ header {
     color: #F1D9ED;
     font-size: 20px;
 }
+
 .despedida p {
-    letter-spacing:1px;
+    letter-spacing: 1px;
 }
 
-.despedida h2 { 
+.despedida h2 {
     font-size: 70px;
     font-weight: 700;
     margin-bottom: 10px;
-    color:#F1D9ED;
+    color: #F1D9ED;
 }
+
 .mje {
     display: flex;
     align-items: center;
     column-gap: 15px;
 
 }
+
 .mensaje {
     color: #B34F93;
     display: flex;
@@ -277,14 +360,15 @@ header {
     padding-bottom: 20px;
 }
 
-.mensaje h3 { 
+.mensaje h3 {
     font-size: 40px;
     font-weight: 700;
 }
-.mje img:hover{
+
+.mje img:hover {
     transform: scale(1.1);
     transition: 0.2s;
-    filter:none;
+    filter: none;
 }
 
 
@@ -299,7 +383,8 @@ header {
     padding-bottom: 15px;
 
 }
-.aside{
+
+.aside {
     position: fixed;
     top: 23%;
     right: 0;
@@ -308,7 +393,9 @@ header {
     padding: 11px;
     display: flex;
     flex-direction: column;
-	border-radius: 25px;
+    border-radius: 25px;
     margin-right: 5px;
 }
-
+.aside img {
+    margin-top: 5px;
+}
