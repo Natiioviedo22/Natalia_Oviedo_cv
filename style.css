@@ -23,13 +23,13 @@ header {
     /* fondo header*/
 }
 
-.botones {
+#botones {
     display: flex;
     justify-content: space-around;
     padding-top: 20px;
 }
 
-.botones a {
+#botones a {
     /*propiedad para que el texto del link no tenga nada*/
     margin: 20px;
     padding: 15px 20px;
@@ -43,9 +43,10 @@ header {
     cursor: pointer;
     /* Cambia el cursor cuando se pasa sobre el botón */
     letter-spacing: 1px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
 }
 
-.botones a:hover {
+#botones a:hover {
     margin: 20px;
     padding: 15px 20px;
     /* Espacio interno del botón */
@@ -71,8 +72,10 @@ header {
 
 
 */
-
 /*hasta aca el header*/
+
+
+
 .baner.img {
     position: relative;
     /* Hace que los hijos puedan posicionarse absolutamente */
@@ -97,7 +100,8 @@ header {
 }
 
 /*ANIMACIONES*/
-.brillo, .brillo2 {
+.brillo,
+.brillo2 {
     position: absolute;
     width: 50px;
     height: 50px;
@@ -122,15 +126,18 @@ header {
         transform: scale(0.8);
         opacity: 0.2;
     }
+
     50% {
         transform: scale(1.5);
         opacity: 1;
     }
+
     100% {
         transform: scale(0.8);
         opacity: 0.2;
     }
 }
+
 /*MAIN*/
 .main {
     background-color: #F1D9ED
@@ -310,7 +317,7 @@ header {
     margin-left: 95px;
 }
 
-#mis-proyectos img {
+.fotos {
     border-radius: 30px;
     cursor: pointer;
     transition: filter 0.5s ease;
@@ -319,13 +326,17 @@ header {
     /* Sombra opcional para mayor profundidad */
 }
 
-#mis-proyectos img:hover {
+.fotos:hover {
     transform: scale(1.1);
     transition: 0.2s;
     filter: none;
     border: 5px solid #B34F93;
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
+}
     /* Sombra opcional para mayor profundidad */
+
+.volver-arriba{
+    transform: translate(-32px, 70px);
 }
 
 /*COMIENZO footer 4- PROYECTOS*/
@@ -403,6 +414,7 @@ header {
     border-radius: 25px;
     margin-right: 5px;
 }
+
 .aside img {
     margin-top: 5px;
 }
