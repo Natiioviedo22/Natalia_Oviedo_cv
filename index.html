@@ -12,7 +12,7 @@
     <header>
         <nav>
             <ul id="botones">
-                <li><a href="#sobre-mi"> Sobre mi</a></li>
+                <li><a href="#sobre-mi"> Sobre mi</a></li> <!-- para evitar tanto camino largo podés dejar simplemente las a dentro del nav, sin ul/li y sigue la misma funcionalidad -->
                 <li><a href="#mis-proyectos"> Mis proyectos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
@@ -25,7 +25,7 @@
                 <img class="brillo" src="./img/iconos/brillo.svg" width="60px" height="60px">
                 <img class="brillo2" src="./img/iconos/brillo.svg" width="60px" height="60px">
             </div>
-            <div>
+            <div> <!-- es necesario que el h1 esté en un div? -->
                 <h1>Hola!</h1>
             </div>
         </section>
@@ -46,7 +46,7 @@
         <section id="datos">
             <div class="informacion-personal">
                 <ul>
-                    <h3>Educación</h3>
+                    <h3>Educación</h3> <!-- adentro de una ul solo pueden haber li, esta tiene que ir afuera -->
                     <li class="negrita">Universidad Nacional de Lanús (UNLa)</li>
                     <li>Licenciatura en Diseño y Comunicación Visual (2020 - actualidad)</li>
                     <li class="negrita">Coder House</li>
@@ -56,7 +56,7 @@
                 <div class="idiomas">
                     <ul>
                         <li class="negrita">Español:
-                            <ul>
+                            <ul> <!-- poner una ul por un solo item es una mala utilización de recursos además de que te está dejando muchas etiquetas dentro, como lo resolviste antes con una class negrita estaba mucho mejor -->
                                 <li>
                                     Nativo
                                 </li>
@@ -77,7 +77,7 @@
             </div>
             <div class="informacion-personal">
                 <ul>
-                    <h3>Experiencia</h3>
+                    <h3>Experiencia</h3> <!-- esto va a fuera de la lista  -->
                     <li class="negrita">Empresa Claro s.a</li>
                     <li> Puesto: Backoffice (2019-2024) Atención al cliente. Gestión de consultas y resolución de
                         problemas de manera eficiente.</li>
@@ -161,7 +161,7 @@
                 <h4>natiioviedo92@gmail.com</h4>
             </div>
         </div>
-        <div class="copy">
+        <div class="copy"> <!-- no hace falta que el h6 esté dentro de un div, puede ir suelto -->
             <h6>Todos los derechos reservados / Copyright © 2024 Natalia Oviedo</h6>
         </div>
     </footer>
