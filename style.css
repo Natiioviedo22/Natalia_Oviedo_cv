@@ -65,27 +65,14 @@ header {
     font-weight: 700;
 }
 
-
-
-
-
-
-
-*/
 /*hasta aca el header*/
-
-
-
 .baner.img {
     position: relative;
     /* Hace que los hijos puedan posicionarse absolutamente */
 }
-
 .baner {
-    max-width: 100%;
-    margin-top: 20px;
+    width: 100%;
 }
-
 
 .brillo {
     left: 100px;
@@ -126,12 +113,10 @@ header {
         transform: scale(0.8);
         opacity: 0.2;
     }
-
     50% {
         transform: scale(1.5);
         opacity: 1;
     }
-
     100% {
         transform: scale(0.8);
         opacity: 0.2;
@@ -145,11 +130,9 @@ header {
 
 /*COMIENZO DE SECCION 1 */
 
-
 .inicio {
     height: 100vh;
     background-color: #D78FC6;
-    position: relative;
 }
 
 .inicio h1 {
@@ -169,11 +152,7 @@ header {
     transform: scale(1.2);
 }
 
-
-
 /*COMIENZO SECCION 2- DATOS*/
-
-
 /*pantalla completa*/
 #sobre-mi {
     height: 100vh;
@@ -190,7 +169,9 @@ header {
 /* flex-box*/
 .caja-presentacion {
     display: flex;
-    gap: 60px;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 40px;
 }
 
 /* titulo sobre mi */
@@ -202,17 +183,11 @@ header {
     line-height: 1.5;
 }
 
-
 /* imagen*/
 .caja-presentacion img {
     max-width: 100px;
-    max-height: 100px;
-    position: absolute;
-    width: 60px;
-    height: 60px;
     animation: pulse 1s infinite alternate;
-    top: 173%;
-    left: 18%;
+    margin-top: 20px;
 }
 
 
@@ -221,15 +196,11 @@ header {
     font-size: 35px;
     color: #B34F93;
     max-width: 950px;
-    padding-top: 32px;
 }
 
 
 /*COMIENZO SECCION 3- DATOS*/
-
 /* flex.box estudios*/
-
-
 
 #datos {
     height: 80vh;
@@ -237,7 +208,10 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
+    justify-content: center;
+    gap: 130px;
 }
+
 
 .informacion-personal {
     border: 4px solid #D26CA7;
@@ -250,10 +224,8 @@ header {
     /* Sombra  */
     max-width: 500px;
     /* Anchura máxima del contenedor*/
-    margin: 10px auto;
     /* Centrar el contenedor horizontalmente */
-    background-color: #F1D9ED;
-    /* Color de fondo si lo deseas */
+    background-color: #F1D9ED;/
 }
 
 .logos {
@@ -265,7 +237,6 @@ header {
     font-size: 40px;
     font-weight: 700;
     margin-top: 50px;
-
 }
 
 .negrita {
@@ -287,10 +258,7 @@ header {
 #mis-proyectos {
     height: 100vh;
     color: #B34F93;
-    padding: 100px;
 }
-
-
 .catalogo1 {
     display: flex;
     align-items: flex-end;
@@ -321,7 +289,6 @@ header {
     border-radius: 30px;
     cursor: pointer;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-    /* Sombra opcional para mayor profundidad */
 }
 
 .fotos:hover {
@@ -329,77 +296,58 @@ header {
     transition: 0.2s;
     filter: none;
     border: 5px solid #B34F93;
-    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
-}
-    /* Sombra opcional para mayor profundidad */
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1); /* Sombrapara mayor profundidad */
 
+}
 .volver-arriba{
-    transform: translate(-32px, 70px);
+margin:10px;
+padding-top: 20px;
 }
 
 /*COMIENZO footer 4- PROYECTOS*/
-
-
-.despedida {
-    padding-top: 20px;
-    padding-bottom: 30px;
+#contacto {
     background-color: #B34F93;
-    width: 100%;
-    text-align: center;
+    padding-bottom: 30px;
     color: #F1D9ED;
-    font-size: 20px;
+    display: flex;
+    justify-content: space-around
 }
 
-.despedida p {
-    letter-spacing: 1px;
-}
-
-.despedida h2 {
-    font-size: 70px;
+#contacto h3 {
+    font-size: 45px;
     font-weight: 700;
-    margin-bottom: 10px;
-    color: #F1D9ED;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 1px;
 }
 
 .mje {
     display: flex;
     align-items: center;
     column-gap: 15px;
-
+    font-size: 20px;
 }
 
 .mensaje {
-    color: #B34F93;
-    display: flex;
-    justify-content: space-around;
-    font-size: 20px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    display: flex;
+    gap:60px
 }
 
-.mensaje h3 {
-    font-size: 40px;
-    font-weight: 700;
+.copy {
+font-size: 15px;
+display: flex;
+align-items: flex-end;
 }
 
 .mje img:hover {
     transform: scale(1.1);
     transition: 0.2s;
     filter: none;
-}
-
-
-.copy {
-    width: 100%;
-    color: #B34F93;
     font-size: 20px;
-    display: flex;
-    justify-content: space-around;
-    padding-top: 15px;
-    padding-bottom: 15px;
-
 }
 
+/*redes fijas*/
 .redes {
     position: fixed;
     top: 23%;
