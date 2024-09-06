@@ -68,7 +68,7 @@ header {
 
 
 
-
+/* guarda con todo este espacio en blanco */
 
 
 */
@@ -82,8 +82,8 @@ header {
 }
 
 .baner {
-    max-width: 100%;
-    margin-top: 20px;
+    max-width: 100%; /* el max-width es efectivo cuando se utilizan medidas fijas, en todo caso sería solo width */
+    margin-top: 20px; /* no está bueno que haya un margen porque agrega más tamaño al header */
 }
 
 
@@ -149,7 +149,7 @@ header {
 .inicio {
     height: 100vh;
     background-color: #D78FC6;
-    position: relative;
+    position: relative; /* todavía no vimos position, por qué está esto acá? cuál es su función? */
 }
 
 .inicio h1 {
@@ -207,9 +207,9 @@ header {
 .caja-presentacion img {
     max-width: 100px;
     max-height: 100px;
-    position: absolute;
+    position: absolute; /* en este caso position te va a traer problemas a futuro, lo más conveniente es aplicar flex al padre */
     width: 60px;
-    height: 60px;
+    height: 60px; /* o usamos un ancho fijo o un ancho máximo con medidas fijas pero no ambos */
     animation: pulse 1s infinite alternate;
     top: 173%;
     left: 18%;
@@ -221,7 +221,7 @@ header {
     font-size: 35px;
     color: #B34F93;
     max-width: 950px;
-    padding-top: 32px;
+    padding-top: 32px; /* explorá la propiedad text-wrap para evitar que te queden huérfanas en el texto */
 }
 
 
@@ -251,7 +251,7 @@ header {
     max-width: 500px;
     /* Anchura máxima del contenedor*/
     margin: 10px auto;
-    /* Centrar el contenedor horizontalmente */
+    /* Centrar el contenedor horizontalmente */ /* no se centra con margins! eso es con flex, y si querés separar las cajas podés usar gap */
     background-color: #F1D9ED;
     /* Color de fondo si lo deseas */
 }
@@ -287,7 +287,7 @@ header {
 #mis-proyectos {
     height: 100vh;
     color: #B34F93;
-    padding: 100px;
+    padding: 100px; /* guarda que este padding está haciendo que la sección sea mucho más grande que una pantalla y además puede solucionarse con flex*/
 }
 
 
@@ -341,7 +341,7 @@ header {
 
 
 .despedida {
-    padding-top: 20px;
+    padding-top: 20px; /* tratá de poner los paddings en una sola línea */
     padding-bottom: 30px;
     background-color: #B34F93;
     width: 100%;
