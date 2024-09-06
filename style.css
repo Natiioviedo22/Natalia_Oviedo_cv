@@ -402,7 +402,7 @@ header {
 
 }
 
-.aside {
+.redes {
     position: fixed;
     top: 23%;
     right: 0;
@@ -415,6 +415,6 @@ header {
     margin-right: 5px;
 }
 
-.aside img {
+.redes img {
     margin-top: 5px;
 }
