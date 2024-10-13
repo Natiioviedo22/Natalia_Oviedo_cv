@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+</html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>/ Natalia oviedo </title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="img/iconos/corazon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav id="botonera">
+            <div class="logo">
+                <img src="./img/iconos/corazon.svg" alt="animacion corazón" width="60px" height="52px">
+            </div>
+            <div class="botones">
+                <a href="#sobre-mi">Sobre mi</a>
+                <a href="#mis-proyectos">Mis proyectos</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h1>contactame</h1>
+        </div>
+        <div>
+            <img src="./ilus.png" alt="ilustracion de avion" width="375px" height="161px">
+        </div>
+        <p> ¿Te gustaria que trabajemos juntos?</p>
+        <p> *Los campos con asteriscos son obligatorios! </p>
+        <form method="post" action="mailto:natiioviedo92@gmail.com?subject=Hola%20Natalia email enviado desde el formulario" target="_blank" enctype="text/plain">
+            <div class="info">
+                <label for="Nombre"> Nombre y Apellido</label>
+                <input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder=" Nombre completo" required>
+                <label for="email">Correo electronico</label>
+                <input type="email" name="email" id="Email" placeholder="Email" required>
+                <label for="tel">Teléfono</label>
+                <input type="tel" name="Telefono" id="Telefono" placeholder="(011)00000000">
+            </div>
+            <div class="info2">
+                <label for="Mensaje">Mensaje</label>
+                <textarea name="Mensaje" id="Mensaje" maxlength="600"></textarea>
+                <input type="reset" value="Borrar" class="borrar">
+                <input type="submit" value="Enviar" class="enviar">
+            </div>
+        </form>
+    </main>
