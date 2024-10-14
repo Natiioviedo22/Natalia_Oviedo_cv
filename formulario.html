@@ -23,29 +23,57 @@
             </div>
         </nav>
     </header>
-    <main>
-        <div>
-            <h1>contactame</h1>
-        </div>
-        <div>
-            <img src="./ilus.png" alt="ilustracion de avion" width="375px" height="161px">
-        </div>
-        <p> ¿Te gustaria que trabajemos juntos?</p>
-        <p> *Los campos con asteriscos son obligatorios! </p>
-        <form method="post" action="mailto:natiioviedo92@gmail.com?subject=Hola%20Natalia email enviado desde el formulario" target="_blank" enctype="text/plain">
-            <div class="info">
-                <label for="Nombre"> Nombre y Apellido</label>
-                <input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder=" Nombre completo" required>
-                <label for="email">Correo electronico</label>
-                <input type="email" name="email" id="Email" placeholder="Email" required>
-                <label for="tel">Teléfono</label>
-                <input type="tel" name="Telefono" id="Telefono" placeholder="(011)00000000">
+    <main class="contenedor-formulario">
+        <section>
+            <div class="texto-lectura">
+                <p> ¿Te gustaria que trabajemos juntos?</p>
             </div>
-            <div class="info2">
-                <label for="Mensaje">Mensaje</label>
-                <textarea name="Mensaje" id="Mensaje" maxlength="600"></textarea>
-                <input type="reset" value="Borrar" class="borrar">
-                <input type="submit" value="Enviar" class="enviar">
+        </section>
+        <section>
+            <div class="aviso">
+                <h1>contactame</h1>
+                <img src="./ilus.png" alt="ilustracion de avion" width="375px" height="161px">
             </div>
-        </form>
+            <p> *Los campos con asteriscos son obligatorios! </p>
+            <form method="post"
+                action="mailto:natiioviedo92@gmail.com?subject=Hola%20Natalia email enviado desde el formulario"
+                target="_blank" enctype="text/plain">
+                <div class="info">
+                    <label for="Nombre"> Nombre y Apellido</label>
+                    <input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder=" Nombre completo" required>
+                    <label for="email">Correo electronico</label>
+                    <input type="email" name="email" id="Email" placeholder="Email" required>
+                    <label for="tel">Teléfono</label>
+                    <input type="tel" name="Telefono" id="Telefono" placeholder="(011)00000000">
+                </div>
+                <div class="info2">
+                    <label for="Mensaje">Mensaje</label>
+                    <textarea name="Mensaje" id="Mensaje" maxlength="600"></textarea>
+                    <input type="reset" value="Borrar" class="borrar">
+                    <input type="submit" value="Enviar" class="enviar">
+                </div>
+            </form>
+        </section>
     </main>
+    <footer id="contacto">
+        <h3>Contactame!</h3>
+        <div class="mensaje">
+            <div class="mje">
+                <a href="https://www.linkedin.com/in/natalia-oviedo-7906b7275/" target="_blank">
+                    <img class="icon" src="img/logos/linkedin.png" alt="instagram" width="50px" height="50px">
+                </a>
+                <h4>Linkedin</h4>
+            </div>
+            <div class="mje">
+                <a
+                    href="mailto:natiioviedo92@gmail.com?subject=Hola%20Natalia&body=Hola%20Natalia,%0AVi%20tu%20trabajo%20y%20me%20gustaría%20saber%20más.%0A¡Hablemos!">
+                    <img src="./img/logos/gmail.png" width="50px" height="50px">
+                </a>
+                <h4>natiioviedo92@gmail.com</h4>
+            </div>
+        </div>
+        <h6 class="copy"> Copyright © 2024 Natalia Oviedo</h6>
+    </footer>
+</body>
+
+</html>

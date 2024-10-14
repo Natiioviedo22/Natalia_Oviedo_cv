@@ -246,7 +246,7 @@ header {
     max-width: 500px;
     /* Anchura máxima del contenedor*/
     /* Centrar el contenedor horizontalmente */
-    background-color: #F1D9ED;/
+    background-color: #F7ECF5;
 }
 
 .logos {
@@ -390,17 +390,56 @@ align-items: flex-end;
 }
 
 /*FORMULARIO DE CONTACTO*/
-form {
-    width: 100%;
-    height: auto;
+body {
+    background-color: #F7ECF5;
+}
+.contenedor-formulario {
+    display: flex;
+    flex-direction: row;
+    column-gap: 60px;
+    max-width: 100%;
+    color: #B34F93;
+    align-items: flex-end;
+
+    
+}
+.texto-lectura {
+    font-size: 48px;
+    font-weight: 700;
+    max-width: 40%;
+    padding:  20px 50px 100px;
+    font-family: "neulis-cursive", sans-serif;
+    font-size: 70px;
+    margin-top: 30px;
+}
+
+.aviso {
+    display: flex;
+
+}
+.aviso h1 {
+    font-size: 90px;
+    font-weight: 700;
+    margin-top: 30px;
+    font-family: "neulis-cursive", sans-serif;
     display: flex;
 }
 
-input {
-    background-color: #D78FC6;
+form {
     width: 100%;
-    height: 30px;
+    height: 60;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+input {
+    background-color: #F1D9ED;
+    width: 100%;
+    height: 50px;
     margin-bottom: 25px;
+    border-radius: 25px;
+    border: 3px solid #B34F93;
 
 }
 label {
@@ -409,12 +448,17 @@ label {
 }
 
 .info, .info2 {
-    width: 20%;
+    width: 40%;
     height: auto;
     padding: 20px;
     display: flex;
     flex-direction: column;
     border-radius: 40px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.info2 {
+    display: flex;
 }
 input [type="submit"] , input [type="reset"] {
     height: 30px;
@@ -435,5 +479,5 @@ textarea {
     background-color: #D78FC6;
     width: 100%;
     height: 200px;
-    border-radius: 40px;
+    margin-bottom: 20px;
 }
