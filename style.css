@@ -5,17 +5,16 @@
 
 
 @import url("https://use.typekit.net/mqf8qze.css");
-
 * {
     margin: 0px;
     padding: 0px;
     text-decoration: none;
     list-style: none;
     font-family: "elza",sans-serif;
+
 }
 
-
-
+/* INdex*/
 header {
     background-color: #D78FC6;
     /* fondo header*/
@@ -25,7 +24,6 @@ header {
     display: flex;
     justify-content: space-between;
 }
-
 .logo {
     display: flex;
     align-items: center;
@@ -50,6 +48,7 @@ header {
     /* Cambia el cursor cuando se pasa sobre el botón */
     letter-spacing: 1px;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+    font-weight: 700;
 }
 
 .botones a:hover {
@@ -94,7 +93,9 @@ header {
 
 /*ANIMACIONES*/
 .brillo,
-.brillo2 {
+.brillo2,
+.brillo2-0,
+.brillo-2 {
     position: absolute;
     width: 50px;
     height: 50px;
@@ -164,7 +165,7 @@ header {
     justify-content: space-evenly;
 }
 
-.saludo h2 {
+h3 {
     font-family:"neulis-cursive", sans-serif;
     font-weight: 400;
     font-size: 60px;
@@ -172,162 +173,111 @@ header {
     margin-top: 30px;
 }
 
-/*COMIENZO SECCION 2- DATOS*/
+/*COMIENZO SECCION 2- invitacion DATOS*/
 /*pantalla completa*/
 #sobre-mi {
     height: 100vh;
-
-}
-
-/*cajas*/
-#sobre-mi {
-    
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-/* flex-box*/
-.caja-presentacion {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    gap: 80px;
-}
-
-/* titulo sobre mi */
-.caja-presentacion h2 {
-    color: #B34F93;
-    font-size: 80px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    line-height: 1.5;
-}
-
-/* imagen*/
-.caja-presentacion img {
-    max-width: 100px;
-    animation: pulse 1s infinite alternate;
-    margin-top: 30px;
-}
-
-
-/*PARRAFO de presentacion*/
-.caja-presentacion p {
-    font-size: 35px;
-    color: #B34F93;
-    max-width: 950px;
-}
-
-
-/*COMIENZO SECCION 3- DATOS*/
-/* flex.box estudios*/
-
-#datos {
-    height: 80vh;
-    color: #B34F93;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: center;
-    gap: 130px;
-}
-
-
-.informacion-personal {
-    border: 4px solid #D26CA7;
-    /* Borde delineado de 2px */
-    border-radius: 40px;
-    /* Borde redondeado */
-    padding: 30px;
-    /* Espacio interno  */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    /* Sombra  */
-    max-width: 500px;
-    /* Anchura máxima del contenedor*/
-    /* Centrar el contenedor horizontalmente */
-    background-color: #F7ECF5;
-}
-
-.logos {
-    display: flex;
-}
-
-.informacion-personal h3 {
-    margin: 15px 0;
-    font-size: 40px;
-    font-weight: 700;
-    margin-top: 50px;
-}
-
-.negrita {
-    font-weight: 700;
-    margin-top: 10px;
-}
-
-#datos li {
-    font-size: 20px;
-    max-width: 650px;
-    margin-right: 10px;
-}
-
-.idiomas {
-    display: flex;
-}
-
-/*COMIENZO SECCION 4- PROYECTOS*/
-#mis-proyectos {
-    height: 100vh;
-    color: #B34F93;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around
+    
 }
-.catalogo1 {
-    display: flex;
-    align-items: flex-end;
-    gap: 60px;
-}
-
-.catalogo2 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    margin-top: 130px;
-    gap: 60px;
-}
-
-#mis-proyectos p {
-    font-size: 80px;
-    font-weight: 700;
-    margin: 0px 170px 0px 170px;
-}
-
-#mis-proyectos h2 {
+h2 {
+    font-family:"neulis-cursive", sans-serif;
     font-weight: 600;
-    text-align: right;
-    margin-left: 95px;
+    font-size: 70px; 
+    padding: 0px 80px; 
+    color: #B34F93;
 }
 
-.fotos {
-    border-radius: 30px;
+/*botones secuandarios*/
+.botones-secundarios {
+    display: flex;
+    justify-content: center
+}
+
+.botones-secundarios a {
+    margin: 20px;
+    padding: 20px 20px;
+    /* Espacio interno del botón */
+    font-family: "neulis-cursive", sans-serif;
+    font-size: 36px;
+    /* Tamaño del texto */
+    color: #F7ECF5;
+    background-color: #D78FC6;
+    border-radius: 40px;
     cursor: pointer;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    /* Cambia el cursor cuando se pasa sobre el botón */
+    letter-spacing: 1px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .botones-secundarios a:hover {
+        margin: 20px;
+        padding: 20px 20px;
+        font-family: "neulis-cursive", sans-serif;
+        /* Espacio interno del botón */
+        font-size: 36px;
+        /* Tamaño del texto */
+        color: #F1D9ED;
+        /* Color del texto */
+        background-color: #7F3565;
+        /* Sin color de fondo */
+        /* Borde fino de 1px */
+        border-radius: 40px;
+        /* Bordes redondeados */
+        cursor: pointer;
+        /* Cambia el cursor cuando se pasa sobre el botón */
+        letter-spacing: 1px;
+    }
+
+/*SALUDO FINAL*/
+.saludo-final {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 82px 0px 66px;
+    align-items: flex-end;
+}
+.saludo-final h1 {
+    font-family:"neulis-cursive", sans-serif;
+    font-weight: 700;
+    color: #B34F93;
+    font-size: 110px;
+    display: flex;
+    margin-top: 30px;
+    letter-spacing: 4px;
+    gap: 42px;
+    /*espaciado de letras*/
+}
+.despedida {
+    display: flex;
+    align-items: baseline
+}
+.brillo2-0, {
+    margin: 10px;
+    transform: translate(1218px, -330px);
 }
 
-.fotos:hover {
-    transform: scale(1.1);
-    transition: 0.2s;
-    filter: none;
-    border: 5px solid #B34F93;
-    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1); /* Sombrapara mayor profundidad */
-
-}
-.volver-arriba{
-margin:10px;
-padding-top: 20px;
+.brillo-2 {
+    transform: translate(-50%, -50%);
 }
 
+
+/*FOOTER*/
+
+/*redes fijas*/
+.redes {
+    position: fixed;
+    top: 23%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #B34F93;
+    padding: 11px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    margin-right: 5px;
+}
 /*COMIENZO footer 4- PROYECTOS*/
 #contacto {
     background-color: #B34F93;
@@ -336,13 +286,8 @@ padding-top: 20px;
     display: flex;
     justify-content: space-around
 }
-
-#contacto h3 {
-    font-size: 45px;
-    font-weight: 700;
-    display: flex;
-    align-items: flex-end;
-    letter-spacing: 1px;
+.redes img {
+    margin-top: 5px;
 }
 
 .mje {
@@ -368,25 +313,6 @@ align-items: flex-end;
     transform: scale(1.1);
     transition: 0.2s;
     filter: none;
-    font-size: 20px;
-}
-
-/*redes fijas*/
-.redes {
-    position: fixed;
-    top: 23%;
-    right: 0;
-    transform: translateY(-50%);
-    background-color: #B34F93;
-    padding: 11px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 25px;
-    margin-right: 5px;
-}
-
-.redes img {
-    margin-top: 5px;
 }
 
 /*FORMULARIO DE CONTACTO*/
