@@ -144,15 +144,17 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 0px 82px 0px 66px;
+    
+}
+/* TODOS LOS H1*/
+h1 {
+    font-family:"neulis-cursive", sans-serif;
+    font-size: 110px;
 }
 
-
-
 .saludo h1 {
-    font-family:"neulis-cursive", sans-serif;
     font-weight: 700;
     color: #F1D9ED;
-    font-size: 110px;
     display: flex;
     margin-top: 30px;
     letter-spacing: 4px;
@@ -164,13 +166,17 @@ header {
     flex-direction: column;
     justify-content: space-evenly;
 }
-
-h3 {
+/* TODOS LOS H2*/
+h2 {
     font-family:"neulis-cursive", sans-serif;
-    font-weight: 400;
-    font-size: 60px;
+    font-size: 70px;
+}
+
+
+.saludo2 h2 {
     color: #F1D9ED;
     margin-top: 30px;
+    font-weight: 400;
 }
 
 /*COMIENZO SECCION 2- invitacion DATOS*/
@@ -182,10 +188,8 @@ h3 {
     justify-content: space-around
     
 }
-h2 {
-    font-family:"neulis-cursive", sans-serif;
-    font-weight: 600;
-    font-size: 70px; 
+#sobre-mi h2 {
+    font-weight: 600; 
     padding: 0px 80px; 
     color: #B34F93;
 }
@@ -314,6 +318,56 @@ align-items: flex-end;
     transition: 0.2s;
     filter: none;
 }
+
+
+
+
+
+
+/*SOBRE MI*/
+/*pantalla completa*/
+h4 {
+    color: #B34F93;
+font-family: "Neulis Cursive";
+font-size: 50px;
+}
+#mipresentacion {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#mipresentacion h2 {
+    color: #B34F93;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+.nombre {
+    display: flex;
+    align-items: center;
+    padding: 50px 80px;
+    justify-content: space-between;
+}
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:14;
+}
+.mipresentacion {
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.presentacion p {
+        font-size: 35px;
+        color: #B34F93;
+        max-width: 950px;
+        line-height: normal;
+
+    }
 
 /*FORMULARIO DE CONTACTO*/
 body {
