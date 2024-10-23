@@ -15,7 +15,7 @@
 
 }
 
-/* INdex*/
+/* INDEX.HTML*/
 
 
 #botonera {
@@ -81,13 +81,15 @@
 }
 
 .brillo {
-    left: 100px;
+    top: 35%;
+    left: 75%;
     /* Ajusta según tu diseño */
     transform: translate(608px, -330px);
 }
 
 .brillo2 {
-    left: 100px;
+    top: 35%;
+    left: 27%;
     /* Ajusta según tu diseño */
     transform: translate(1218px, -330px);
 }
@@ -104,18 +106,8 @@
     animation: pulse 1s infinite alternate;
 }
 
-.brillo {
-    top: 22%;
-    left: 32%;
-    transform: translate(-50%, -50%);
-}
 
-.brillo-2 {
-    top: 22%;
-    left: 67%;
-    transform: translate(-50%, -50%);
-    position: relative;
-}
+
 
 @keyframes pulse {
     0% {
@@ -264,18 +256,42 @@ h2 {
 
 .despedida {
     display: flex;
-    align-items: baseline
+    justify-content: center;
+    width: 94%;
 }
 
-.brillo2-0,
+.brillos-despedida {
+    position: absolute;
+    width: 71%;
+    height: 100px;
+}
+
+
+.brillo-2 {
+    top: 22%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+
+
+.brillo2-0 {
+    top: 15%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    position: relative;
+
+}
+/*.brillo2-0,
 {
-margin: 10px;
-transform: translate(1218px, -330px);
+position: absolut;
+width: 57.998px;
+height: 62.045px;
 }
 
 .brillo-2 {
-    transform: translate(-50%, -50%);
-}
+position: relative;
+}*/
 
 
 /*FOOTER*/
@@ -296,34 +312,52 @@ transform: translate(1218px, -330px);
 
 /*COMIENZO FOOTER*/
 #contacto {
-    background-color: #B34F93;
-    padding-bottom: 30px;
-    color: #F1D9ED;
-    display: flex;
-    justify-content: space-around
+    padding: 30px 0px;
 }
 
 .redes img {
     margin-top: 5px;
 }
 
+.mensaje h4 {
+    color: #F7ECF5;
+    font-family: elza, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+
+}
+
 .mje {
     display: flex;
     align-items: center;
     column-gap: 15px;
-    font-size: 20px;
 }
 
 .mensaje {
-    padding-top: 20px;
+    padding: 20px 20px;
+    background-color: #B34F93;
+    gap: 99px;
     display: flex;
-    gap: 60px
+    justify-content: center;
 }
 
 .copy {
-    font-size: 15px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 39px;
+    align-self: stretch;
     display: flex;
     align-items: flex-end;
+    width: 100%;
+}
+
+.copy h6 {
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+color: #B34F93;
+
 }
 
 .mje img:hover {
@@ -613,7 +647,7 @@ textarea {
 }
 
 
-/*CARROUSEL*/
+/* MIS PROYECTOS/ CARROUSEL*/
 
 * {
     box-sizing: border-box;
@@ -628,16 +662,19 @@ textarea {
 .inicio-carousel {
     padding-left: 75px;
 }
+
 .inicio-carousel h2 {
     color: #B34F93;
-    margin-top: 30px ;
+    margin-top: 30px;
 }
+
 .inicio-carousel p {
     font-size: 30px;
     color: #B34F93;
-    margin-top: 20px ;
+    margin-top: 20px;
 
 }
+
 .carousel-container {
 
     display: flex;
@@ -646,6 +683,8 @@ textarea {
     width: 100%;
     position: relative;
     padding: 20px;
+    margin-top: 50px;
+
 }
 
 .carousel {
@@ -660,8 +699,11 @@ textarea {
     transition: transform 0.5s ease-in-out;
 }
 
+
+
 .carousel-item {
-    min-width: 25%; /* Cada imagen ocupa el 25% del ancho del carrusel */
+    min-width: 25%;
+    /* Cada imagen ocupa el 25% del ancho del carrusel */
     padding: 10px;
     text-align: center;
 }
@@ -669,17 +711,23 @@ textarea {
 .carousel-item img {
     width: 254px;
     height: 412px;
-    border-radius:13px;
-    border: 5px  solid #B34F93;   /* Borde izquierdo */
-    border-right: 5px solid #B34F93;  /* Borde derecho */
-    border-top: 5px solid #B34F93;     /* Borde superior */
-    border-bottom: 35px solid #B34F93; /* Borde inferior más grande y de otro color */
-    transition: filter 0.3s ease; /* Animación suave al cambiar el filtro */
+    border-radius: 13px;
+    border: 5px solid #B34F93;
+    /* Borde izquierdo */
+    border-right: 5px solid #B34F93;
+    /* Borde derecho */
+    border-top: 5px solid #B34F93;
+    /* Borde superior */
+    border-bottom: 35px solid #B34F93;
+    /* Borde inferior más grande y de otro color */
+    transition: filter 0.3s ease;
+    /* Animación suave al cambiar el filtro */
 }
 
-.carousel-item img:hover{
+.carousel-item img:hover {
     filter: contrast(70%);
-    
+    color: #6b286d;
+
 }
 
 
@@ -702,29 +750,33 @@ textarea {
 }
 
 .ver-mas:hover {
-    background-color: #ff345e;
+    background-color: #7F3565;
     cursor: pointer;
 }
 
 button {
-    background-color: transparent;
+    background-color: #B34F93;
+    color: #F7ECF5;
     border: none;
     font-size: 2rem;
-    color: #6b286d;
+    border-radius: 10%;
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
+    padding: 10px;
+    /* Espaciado */
 }
 
 button.prev {
-    left: 10px;
+    left: 60px;
 }
 
 button.next {
-    right: 10px;
+    right: 60px;
 }
 
 button:hover {
-    color: #ff5f7e; /* Cambia el color al pasar el mouse */
+    color: #7F3565;
+    /* Cambia el color al pasar el mouse */
 }
