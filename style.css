@@ -5,25 +5,25 @@
 
 
 @import url("https://use.typekit.net/mqf8qze.css");
+
 * {
     margin: 0px;
     padding: 0px;
     text-decoration: none;
     list-style: none;
-    font-family: "elza",sans-serif;
+    font-family: "elza", sans-serif;
 
 }
 
 /* INdex*/
-header {
-    background-color: #D78FC6;
-    /* fondo header*/
-}
+
 
 #botonera {
     display: flex;
     justify-content: space-between;
+    background-color: #D78FC6;
 }
+
 .logo {
     display: flex;
     align-items: center;
@@ -75,6 +75,7 @@ header {
     position: relative;
     /* Hace que los hijos puedan posicionarse absolutamente */
 }
+
 .baner {
     width: 100%;
 }
@@ -109,10 +110,11 @@ header {
     transform: translate(-50%, -50%);
 }
 
-.brillo2 {
+.brillo-2 {
     top: 22%;
     left: 67%;
     transform: translate(-50%, -50%);
+    position: relative;
 }
 
 @keyframes pulse {
@@ -120,10 +122,12 @@ header {
         transform: scale(0.8);
         opacity: 0.2;
     }
+
     50% {
         transform: scale(1.5);
         opacity: 1;
     }
+
     100% {
         transform: scale(0.8);
         opacity: 0.2;
@@ -140,15 +144,17 @@ header {
     height: 100vh;
     background-color: #B34F93;
 }
+
 .saludo {
     display: flex;
     justify-content: space-between;
     padding: 0px 82px 0px 66px;
-    
+
 }
+
 /* TODOS LOS H1*/
 h1 {
-    font-family:"neulis-cursive", sans-serif;
+    font-family: "neulis-cursive", sans-serif;
     font-size: 110px;
 }
 
@@ -166,9 +172,10 @@ h1 {
     flex-direction: column;
     justify-content: space-evenly;
 }
+
 /* TODOS LOS H2*/
 h2 {
-    font-family:"neulis-cursive", sans-serif;
+    font-family: "neulis-cursive", sans-serif;
     font-size: 70px;
 }
 
@@ -186,11 +193,11 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-around
-    
 }
+
 #sobre-mi h2 {
-    font-weight: 600; 
-    padding: 0px 80px; 
+    font-weight: 600;
+    padding: 0px 80px;
     color: #B34F93;
 }
 
@@ -214,26 +221,26 @@ h2 {
     /* Cambia el cursor cuando se pasa sobre el botón */
     letter-spacing: 1px;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
-    }
+}
 
-    .botones-secundarios a:hover {
-        margin: 20px;
-        padding: 20px 20px;
-        font-family: "neulis-cursive", sans-serif;
-        /* Espacio interno del botón */
-        font-size: 36px;
-        /* Tamaño del texto */
-        color: #F1D9ED;
-        /* Color del texto */
-        background-color: #7F3565;
-        /* Sin color de fondo */
-        /* Borde fino de 1px */
-        border-radius: 40px;
-        /* Bordes redondeados */
-        cursor: pointer;
-        /* Cambia el cursor cuando se pasa sobre el botón */
-        letter-spacing: 1px;
-    }
+.botones-secundarios a:hover {
+    margin: 20px;
+    padding: 20px 20px;
+    font-family: "neulis-cursive", sans-serif;
+    /* Espacio interno del botón */
+    font-size: 36px;
+    /* Tamaño del texto */
+    color: #F1D9ED;
+    /* Color del texto */
+    background-color: #7F3565;
+    /* Sin color de fondo */
+    /* Borde fino de 1px */
+    border-radius: 40px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cambia el cursor cuando se pasa sobre el botón */
+    letter-spacing: 1px;
+}
 
 /*SALUDO FINAL*/
 .saludo-final {
@@ -242,8 +249,9 @@ h2 {
     padding: 0px 82px 0px 66px;
     align-items: flex-end;
 }
+
 .saludo-final h1 {
-    font-family:"neulis-cursive", sans-serif;
+    font-family: "neulis-cursive", sans-serif;
     font-weight: 700;
     color: #B34F93;
     font-size: 110px;
@@ -253,13 +261,16 @@ h2 {
     gap: 42px;
     /*espaciado de letras*/
 }
+
 .despedida {
     display: flex;
     align-items: baseline
 }
-.brillo2-0, {
-    margin: 10px;
-    transform: translate(1218px, -330px);
+
+.brillo2-0,
+{
+margin: 10px;
+transform: translate(1218px, -330px);
 }
 
 .brillo-2 {
@@ -282,7 +293,8 @@ h2 {
     border-radius: 25px;
     margin-right: 5px;
 }
-/*COMIENZO footer 4- PROYECTOS*/
+
+/*COMIENZO FOOTER*/
 #contacto {
     background-color: #B34F93;
     padding-bottom: 30px;
@@ -290,6 +302,7 @@ h2 {
     display: flex;
     justify-content: space-around
 }
+
 .redes img {
     margin-top: 5px;
 }
@@ -304,13 +317,13 @@ h2 {
 .mensaje {
     padding-top: 20px;
     display: flex;
-    gap:60px
+    gap: 60px
 }
 
 .copy {
-font-size: 15px;
-display: flex;
-align-items: flex-end;
+    font-size: 15px;
+    display: flex;
+    align-items: flex-end;
 }
 
 .mje img:hover {
@@ -320,17 +333,14 @@ align-items: flex-end;
 }
 
 
-
-
-
-
 /*SOBRE MI*/
 /*pantalla completa*/
 h4 {
     color: #B34F93;
-font-family: "Neulis Cursive";
-font-size: 50px;
+    font-family: "Neulis Cursive";
+    font-size: 50px;
 }
+
 #mipresentacion {
     height: 100vh;
     display: flex;
@@ -342,37 +352,168 @@ font-size: 50px;
     font-weight: 700;
     letter-spacing: 3px;
 }
+
 .nombre {
     display: flex;
     align-items: center;
-    padding: 50px 80px;
+    padding: 40px 80px;
     justify-content: space-between;
 }
+
 .presentacion {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap:14;
+    gap: 14;
 }
+
 .mipresentacion {
     display: flex;
     justify-content: space-around;
-
-
 }
 
 .presentacion p {
-        font-size: 35px;
-        color: #B34F93;
-        max-width: 950px;
-        line-height: normal;
+    font-size: 35px;
+    color: #B34F93;
+    max-width: 950px;
+    line-height: normal;
+}
 
-    }
+
+/*Section intereses*/
+.intereses {
+    height: 100vh;
+    padding: 95px 10px 95px 64px;
+
+}
+
+.intereses h2 {
+    padding: 10px 10px 10px 64px;
+}
+
+.intereses ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.intereses li {
+    font-family: "neulis-cursive", sans-serif;
+    display: flex;
+    font-size: 40px;
+    color: #B34F93;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 24px;
+    margin-top: 20px;
+}
+
+
+.intereses img {
+    margin-top: 90px;
+}
+
+/*Section info personal, idiomas etc*/
+.informacion-personal {
+    height: 100vh;
+    display: flex;
+}
+
+/*todos los h3*/
+h3 {
+    font-size: 40px;
+    font-family: "neulis-cursive", sans-serif;
+
+}
+
+
+
+
+.informacion-personal h3 {
+    margin: 15px 0;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.negrita {
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+#datos li {
+    font-size: 20px;
+    max-width: 650px;
+    margin-right: 10px;
+}
+
+.info-lista {
+    display: flex;
+    co
+}
+
+
+
+
+
+
+
+
+/*MIS PROYECTOS*/
+
+
+
+
+
+
+/*DETALLES DE MIS PROYECTOS*/
+
+
+.boton-atras {
+    background-color: none;
+}
+
+.detalle-galeria {
+    display: flex;
+}
+
+.detalle-titulo h2 {
+    color: #B34F93;
+    font-weight: 300;
+}
+
+.detalle-titulo h3 {
+    color: #B34F93;
+
+}
+
+.detalle-img {
+    border-radius: 78, 0, 0, 0;
+    color: #B34F93;
+}
+
+.detalle-titulo p {
+    max-width: 650px;
+    color: var(--Color-morado, #7F3565);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
 
 /*FORMULARIO DE CONTACTO*/
 body {
     background-color: #F7ECF5;
 }
+
 .contenedor-formulario {
     display: flex;
     flex-direction: row;
@@ -381,13 +522,14 @@ body {
     color: #B34F93;
     align-items: flex-end;
 
-    
+
 }
+
 .texto-lectura {
     font-size: 48px;
     font-weight: 700;
     max-width: 40%;
-    padding:  20px 50px 100px;
+    padding: 20px 50px 100px;
     font-family: "neulis-cursive", sans-serif;
     font-size: 70px;
     margin-top: 30px;
@@ -397,6 +539,7 @@ body {
     display: flex;
 
 }
+
 .aviso h1 {
     font-size: 90px;
     font-weight: 700;
@@ -422,12 +565,14 @@ input {
     border: 3px solid #B34F93;
 
 }
+
 label {
     display: block;
     height: 25px;
 }
 
-.info, .info2 {
+.info,
+.info2 {
     width: 40%;
     height: auto;
     padding: 20px;
@@ -437,27 +582,149 @@ label {
     font-size: 25px;
     font-weight: 600;
 }
+
 .info2 {
     display: flex;
 }
-input [type="submit"] , input [type="reset"] {
+
+input [type="submit"],
+input [type="reset"] {
     height: 30px;
     width: 30%;
-    background-color:#D78FC6 ;
+    background-color: #D78FC6;
     display: flex;
     color: #F7ECF5;
     padding: 5px;
 }
+
 .borrar {
     background-color: #D78FC6;
 }
+
 .enviar {
-        background-color: #B34F93;
-    }
+    background-color: #B34F93;
+}
 
 textarea {
     background-color: #D78FC6;
     width: 100%;
     height: 200px;
     margin-bottom: 20px;
+}
+
+
+/*CARROUSEL*/
+
+* {
+    box-sizing: border-box;
+}
+
+.galeria {
+    height: 100vh;
+    background-color: #F7ECF5;
+
+}
+
+.inicio-carousel {
+    padding-left: 75px;
+}
+.inicio-carousel h2 {
+    color: #B34F93;
+    margin-top: 30px ;
+}
+.inicio-carousel p {
+    font-size: 30px;
+    color: #B34F93;
+    margin-top: 20px ;
+
+}
+.carousel-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    padding: 20px;
+}
+
+.carousel {
+    width: 80%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 25%; /* Cada imagen ocupa el 25% del ancho del carrusel */
+    padding: 10px;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 254px;
+    height: 412px;
+    border-radius:13px;
+    border: 5px  solid #B34F93;   /* Borde izquierdo */
+    border-right: 5px solid #B34F93;  /* Borde derecho */
+    border-top: 5px solid #B34F93;     /* Borde superior */
+    border-bottom: 35px solid #B34F93; /* Borde inferior más grande y de otro color */
+    transition: filter 0.3s ease; /* Animación suave al cambiar el filtro */
+}
+
+.carousel-item img:hover{
+    filter: contrast(70%);
+    
+}
+
+
+.carousel-item p {
+    font-family: 'Arial', sans-serif;
+    margin: 10px 0;
+    color: #6b286d;
+    font-weight: bold;
+}
+
+.ver-mas {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #ff5f7e;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-family: 'Arial', sans-serif;
+}
+
+.ver-mas:hover {
+    background-color: #ff345e;
+    cursor: pointer;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #6b286d;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:hover {
+    color: #ff5f7e; /* Cambia el color al pasar el mouse */
 }
