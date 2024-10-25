@@ -12,8 +12,8 @@
     <header>
         <nav id="botonera">
             <div class="logo">
-                <a href="index.html"> 
-                <img src="./img/iconos/corazon.svg" alt="animacion corazón" width="60px" height="52px">
+                <a href="index.html">
+                    <img src="./img/iconos/corazon.svg" alt="animacion corazón" width="60px" height="52px">
                 </a>
             </div>
             <div class="botones">
@@ -23,36 +23,39 @@
             </div>
         </nav>
     </header>
-    <main class="contenedor-formulario">
-        <section>
-            <div class="texto-lectura">
-                <p> ¿Te gustaria que trabajemos juntos?</p>
-            </div>
-        </section>
-        <section>
+    <main>
+        <section class="contenedor-formulario">
             <div class="aviso">
                 <h1>contactame</h1>
-                <img src="./img/ilustraciones/ilustracion-avion.png" alt="ilustracion de avion" width="360px" height="161px">
+                <img src="./img/ilustraciones/ilustracion-avion.png" alt="ilustracion de avion" width="360px"
+                    height="161px">
             </div>
-            <p> *Los campos con asteriscos son obligatorios! </p>
-            <form method="post"
-                action="mailto:natiioviedo92@gmail.com?subject=Hola%20Natalia email enviado desde el formulario"
-                target="_blank" enctype="text/plain">
-                <div class="info">
-                    <label for="Nombre"> Nombre y Apellido</label>
-                    <input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder=" Nombre completo" required>
-                    <label for="email">Correo electronico</label>
-                    <input type="email" name="email" id="Email" placeholder="Email" required>
-                    <label for="tel">Teléfono</label>
-                    <input type="tel" name="Telefono" id="Telefono" placeholder="(011)00000000">
+            <div class= "formulario">
+                <div class="texto-lectura">
+                    <h2> ¿Te gustaría que trabajemos en un proyecto juntos?  </h2>
                 </div>
-                <div class="info2">
-                    <label for="Mensaje">Mensaje</label>
-                    <textarea name="Mensaje" id="Mensaje" maxlength="600"></textarea>
-                    <input type="reset" value="Borrar" class="borrar">
-                    <input type="submit" value="Enviar" class="enviar">
+            <div class="campos">
+                <form method="post"
+                    action="mailto:natiioviedo92@gmail.com?subject=Hola%20Natalia email enviado desde el formulario"
+                    target="_blank" enctype="text/plain">
+                    <div class="info">
+                        <p> *Los campos con asteriscos son obligatorios! </p>
+                        <label for="Nombre"> Nombre y Apellido</label>
+                        <input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder=" Nombre completo"
+                            required>
+                        <label for="email">Correo electronico</label>
+                        <input type="email" name="email" id="Email" placeholder="Email" required>
+                        <label for="tel">Teléfono</label>
+                        <input type="tel" name="Telefono" id="Telefono" placeholder="(011)00000000">
+                    </div>
+                    <div class="info2">
+                        <label for="Mensaje">Mensaje</label>
+                        <textarea name="Mensaje" id="Mensaje" maxlength="600"></textarea>
+                        <input type="reset" value="Borrar" class="borrar">
+                        <input type="submit" value="Enviar" class="enviar">
+                    </div>
+                </form>
                 </div>
-            </form>
         </section>
     </main>
     <footer id="contacto">
@@ -63,7 +66,8 @@
             <a href="https://www.behance.net/nataliaoviedo3" target="_blank">
                 <img class="icon" src="img/logos/behance2.png" alt="behance" width="40px" height="40px">
             </a>
-        </div><div class="mensaje">
+        </div>
+        <div class="mensaje">
             <div class="mje">
                 <a href="https://www.linkedin.com/in/natalia-oviedo-7906b7275/" target="_blank">
                     <img class="icon" src="img/logos/linkedin.png" alt="instagram" width="50px" height="50px">
@@ -77,10 +81,10 @@
                 </a>
                 <h4>natiioviedo92@gmail.com</h4>
             </div>
-            </div>
-            <div class="copy">
-        <h6 > Copyright © 2024 Natalia Oviedo</h6>
-    </div>
+        </div>
+        <div class="copy">
+            <h6> Copyright © 2024 Natalia Oviedo</h6>
+        </div>
     </footer>
 </body>
 
