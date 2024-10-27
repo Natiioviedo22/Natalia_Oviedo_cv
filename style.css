@@ -12,12 +12,13 @@
     text-decoration: none;
     list-style: none;
     font-family: "elza", sans-serif;
+    scroll-behavior: smooth;
 
 }
 
-/*body, html {
-    overflow-x: hidden;
-}*/
+body, html {
+scroll-behavior: smooth;
+}
 /* INDEX.HTML*/
 
 
