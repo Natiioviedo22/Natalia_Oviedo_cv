@@ -348,9 +348,9 @@ h2 {
 
 .copy h6 {
     font-style: normal;
-font-weight: 400;
-font-size: 16px;
-color: #B34F93;
+    font-weight: 400;
+    font-size: 16px;
+    color: #B34F93;
 
 }
 
@@ -447,19 +447,22 @@ h4 {
     display: grid;
     background-color: #1d5aa0;
     grid-gap: 20px;
-    grid-template-columns: repeat(4, 1fr);   /* Por defecto, cuatro columnas */
+    grid-template-columns: repeat(4, 1fr);
+    /* Por defecto, cuatro columnas */
 }
 
 /*respoSIVE AJUSTAR*/
 @media (max-width: 1200px) {
     .informacion-personal {
-        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas */
+        grid-template-columns: repeat(2, 1fr);
+        /* Dos columnas en pantallas medianas */
     }
 }
 
 @media (max-width: 768px) {
     .informacion-personal {
-        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+        grid-template-columns: 1fr;
+        /* Una columna en pantallas pequeñas */
     }
 }
 
@@ -475,6 +478,7 @@ h3 {
     font-family: "neulis-cursive", sans-serif;
 
 }
+
 .div.grid-item.a {
     display: flex;
     align-items: flex-end;
@@ -505,65 +509,195 @@ h3 {
 /*MIS PROYECTOS*/
 
 /*DETALLES DE MIS PROYECTOS*/
+/*OPCION 1*/
+
+
 
 .detalle-galeria {
     display: flex;
     background-color: #B34F93;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    color: #F7ECF5;
+    position: relative;
 }
+
 .boton-atras {
     background-color: none;
 }
 
-
-.detalle-titulo h2 {
-    color: #F7ECF5;
-    font-weight: 300;
+.info-proyecto {
+    display: flex;
+flex-direction: column;
+justify-content: flex-end;
+gap: 40px;
+padding-left: 40px;
 }
 
-.detalle-titulo h3 {
-    color: #F7ECF5;
-
-}
-
-/*.contenedor {
-    border-radius: 78.895px 0px 0px 0px;
-    background: var(--Rosi-clarito, #F7ECF5);
-    flex: 1 0 0;
-    radius: 75px 0px 0px 0px;
-    border-radius: 75px 0px 0px 0px;
-    border: 5px solid #1a1281;
-}*/
-
-.contenedor {
-    width: 806px; /* Ajusta el tamaño según lo necesites */
-    height: 1045;
-    background-color: #F7ECF5; /* Color de fondo */
-    padding: 10px; /* Espacio para el borde */
-    border-radius: 50px 0 0 0; /* Redondeado del borde */
-    overflow: hidden; /* Asegura que la imagen se recorte en los bordes redondeados */
-  }
-  .contenedor img {
-    width: 100%;
-    height: auto;
-    border-radius: 50px 0 0 0;/* Redondeado de la imagen */
-  }
-
-
-
-
-.detalle-titulo p {
+.info-proyecto p {
     max-width: 650px;
-    color: var(--Color-morado, #F7ECF5);
     font-size: 30px;
     font-weight: 400;
     line-height: 40px;
 }
 
+.detalle-titulo {
+    position: relative;
+    top: -183px;
+    left: 12px;
+}
 
-/*pruab form*/
+.info-proyecto h2 {
+    font-weight: 300;
+}
+
+.info-proyecto h3 {
+    color: #F7ECF5;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.contenedor {
+    width: 806px;
+    /* Ajusta el tamaño según lo necesites */
+    height: 1045;
+    background-color: #F7ECF5;
+    /* Color de fondo */
+    padding: 10px;
+    /* Espacio para el borde */
+    border-radius: 50px 0 0 0;
+    /* Redondeado del borde */
+    overflow: hidden;
+    /* Asegura que la imagen se recorte en los bordes redondeados */
+    display: flex;
+    
+    
+}
+
+.contenedor img {
+    width: 100%;
+    height: 933px;
+    border-radius: 50px 0 0 0;
+    /* Redondeado de la imagen */
+}
+
+
+
+
+.boton-visitar {
+    display: flex;
+    margin-top: 20px; /* Espacio entre el texto y el botón */
+    justify-content: center;
+        position: absolute;
+        left: 320px;
+        top: 807px;
+    
+}
+
+.boton-visitar a {
+    margin: 20px;
+    padding: 8px;
+    width: 175px; /* Ajusta el valor según el largo que prefieras */
+    text-align: center; /* Alinea el texto al centro */
+    font-size: 30px;
+    border-radius: 38px;
+    border: 2px solid #F1D9ED;
+    color: #F1D9ED;
+    cursor: pointer;
+    letter-spacing: 1px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none; /* Para que se vea como botón */
+    transition: all 0.3s ease; /* Suaviza la transición */
+}
+
+.boton-visitar a:hover {
+    color: #B34F93;
+    background-color: #F1D9ED;
+}
+
+
+
+/*DETALLES DE MIS PROYECTOS*/
+/*OPCION 2*/
+
+
+.detalle-galeria-2{
+    display: flex;
+    background-color: #F7ECF5;
+    justify-content: space-between;
+    align-items: center;
+    color: #B34F93;
+    position: relative;
+}
+
+
+
+.detalle-galeria- h2 {
+    color: #B34F93;
+    font-weight: 300;
+}
+
+.detalle-galeria- h3 {
+    color: #B34F93;
+
+}
+
+.contenedor-2 {
+    width: 806px;
+    /* Ajusta el tamaño según lo necesites */
+    height: 1045;
+    background-color: #B34F93;
+    /* Color de fondo */
+    padding: 10px;
+    /* Espacio para el borde */
+    border-radius: 50px 0 0 0;
+    /* Redondeado del borde */
+    overflow: hidden;
+    /* Asegura que la imagen se recorte en los bordes redondeados */
+    display: flex;
+    
+    
+}
+.boton-visitar2 {
+    display: flex;
+    margin-top: 20px; /* Espacio entre el texto y el botón */
+    justify-content: center;
+        position: absolute;
+        left: 320px;
+        top: 807px;
+    
+}
+
+.boton-visitar2 a {
+    margin: 20px;
+    padding: 8px;
+    width: 175px; /* Ajusta el valor según el largo que prefieras */
+    text-align: center; /* Alinea el texto al centro */
+    font-size: 30px;
+    border-radius: 38px;
+    border: 2px solid #B34F93;
+    color: #B34F93;
+    cursor: pointer;
+    letter-spacing: 1px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none; /* Para que se vea como botón */
+    transition: all 0.3s ease; /* Suaviza la transición */
+}
+
+.boton-visitar2 a:hover {
+    color:  #F7ECF5;
+    background-color: #B34F93;
+}
+
+.contenedor-2 img {
+    width: 100%;
+    height: 933px;
+    border-radius: 50px 0 0 0;
+    /* Redondeado de la imagen */
+}
+
+/*form*/
 
 
 
@@ -611,12 +745,13 @@ body {
     font-size: 50px;
     font-weight: 600;
     line-height: 70px;
-    padding-left: 57px; 
+    padding-left: 57px;
 }
+
 .info p {
-font-size: 22px;
-font-weight: 700;
-margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 30px;
 }
 
 
@@ -629,9 +764,7 @@ margin-bottom: 30px;
 }
 
 
-.formulario {
-
-}
+.formulario {}
 
 .aviso {
     display: flex;
@@ -728,6 +861,7 @@ textarea {
     background-color: #F7ECF5;
 
 }
+
 .carousel-container h4 {
     font-size: 25px;
     color: #251520;
