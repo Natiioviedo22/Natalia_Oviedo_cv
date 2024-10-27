@@ -287,9 +287,10 @@ h2 {
 }
 
 
-/*FOOTER*/
+/*FOOTER iciop*/
 
 /*redes fijas*/
+footer {}
 
 .redes {
     position: fixed;
@@ -305,9 +306,6 @@ h2 {
 }
 
 /*COMIENZO FOOTER*/
-#contacto {
-    padding: 30px 0px;
-}
 
 .redes img {
     margin-top: 5px;
@@ -404,7 +402,7 @@ h4 {
     font-size: 35px;
     color: #B34F93;
     max-width: 950px;
-    line-height: normal;
+    line-height: 1.3; 
 }
 
 
@@ -418,6 +416,7 @@ h4 {
 
 .intereses h2 {
     padding: 10px 10px 10px 64px;
+    color: #B34F93;
 }
 
 .intereses ul {
@@ -512,13 +511,12 @@ h3 {
 /*OPCION 1*/
 
 
-
 .detalle-galeria {
     display: flex;
-    background-color: #B34F93;
+    background-color: #F7ECF5;
     justify-content: space-between;
     align-items: center;
-    color: #F7ECF5;
+    color: #B34F93;
     position: relative;
 }
 
@@ -527,11 +525,8 @@ h3 {
 }
 
 .info-proyecto {
-    display: flex;
-flex-direction: column;
-justify-content: flex-end;
-gap: 40px;
-padding-left: 40px;
+    padding: 30px;
+    gap: 30px;
 }
 
 .info-proyecto p {
@@ -549,6 +544,8 @@ padding-left: 40px;
 
 .info-proyecto h2 {
     font-weight: 300;
+    color: #B34F93;
+    margin-bottom: 20px;
 }
 
 .info-proyecto h3 {
@@ -556,30 +553,8 @@ padding-left: 40px;
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
-}
-
-.contenedor {
-    width: 806px;
-    /* Ajusta el tamaño según lo necesites */
-    height: 1045;
-    background-color: #F7ECF5;
-    /* Color de fondo */
-    padding: 10px;
-    /* Espacio para el borde */
-    border-radius: 50px 0 0 0;
-    /* Redondeado del borde */
-    overflow: hidden;
-    /* Asegura que la imagen se recorte en los bordes redondeados */
-    display: flex;
-    
-    
-}
-
-.contenedor img {
-    width: 100%;
-    height: 933px;
-    border-radius: 50px 0 0 0;
-    /* Redondeado de la imagen */
+    color: #B34F93;
+    margin-bottom: 5px;
 }
 
 
@@ -587,93 +562,22 @@ padding-left: 40px;
 
 .boton-visitar {
     display: flex;
-    margin-top: 20px; /* Espacio entre el texto y el botón */
+    margin-top: 20px;
+    /* Espacio entre el texto y el botón */
     justify-content: center;
-        position: absolute;
-        left: 320px;
-        top: 807px;
-    
+    position: absolute;
+    left: 320px;
+    top: 807px;
+
 }
 
 .boton-visitar a {
     margin: 20px;
     padding: 8px;
-    width: 175px; /* Ajusta el valor según el largo que prefieras */
-    text-align: center; /* Alinea el texto al centro */
-    font-size: 30px;
-    border-radius: 38px;
-    border: 2px solid #F1D9ED;
-    color: #F1D9ED;
-    cursor: pointer;
-    letter-spacing: 1px;
-    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
-    text-decoration: none; /* Para que se vea como botón */
-    transition: all 0.3s ease; /* Suaviza la transición */
-}
-
-.boton-visitar a:hover {
-    color: #B34F93;
-    background-color: #F1D9ED;
-}
-
-
-
-/*DETALLES DE MIS PROYECTOS*/
-/*OPCION 2*/
-
-
-.detalle-galeria-2{
-    display: flex;
-    background-color: #F7ECF5;
-    justify-content: space-between;
-    align-items: center;
-    color: #B34F93;
-    position: relative;
-}
-
-
-
-.detalle-galeria- h2 {
-    color: #B34F93;
-    font-weight: 300;
-}
-
-.detalle-galeria- h3 {
-    color: #B34F93;
-
-}
-
-.contenedor-2 {
-    width: 806px;
-    /* Ajusta el tamaño según lo necesites */
-    height: 1045;
-    background-color: #B34F93;
-    /* Color de fondo */
-    padding: 10px;
-    /* Espacio para el borde */
-    border-radius: 50px 0 0 0;
-    /* Redondeado del borde */
-    overflow: hidden;
-    /* Asegura que la imagen se recorte en los bordes redondeados */
-    display: flex;
-    
-    
-}
-.boton-visitar2 {
-    display: flex;
-    margin-top: 20px; /* Espacio entre el texto y el botón */
-    justify-content: center;
-        position: absolute;
-        left: 320px;
-        top: 807px;
-    
-}
-
-.boton-visitar2 a {
-    margin: 20px;
-    padding: 8px;
-    width: 175px; /* Ajusta el valor según el largo que prefieras */
-    text-align: center; /* Alinea el texto al centro */
+    width: 175px;
+    /* Ajusta el valor según el largo que prefieras */
+    text-align: center;
+    /* Alinea el texto al centro */
     font-size: 30px;
     border-radius: 38px;
     border: 2px solid #B34F93;
@@ -681,32 +585,35 @@ padding-left: 40px;
     cursor: pointer;
     letter-spacing: 1px;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
-    text-decoration: none; /* Para que se vea como botón */
-    transition: all 0.3s ease; /* Suaviza la transición */
+    text-decoration: none;
+    /* Para que se vea como botón */
+    transition: all 0.3s ease;
+    /* Suaviza la transición */
 }
 
-.boton-visitar2 a:hover {
-    color:  #F7ECF5;
+.boton-visitar a:hover {
+    color: #F7ECF5;
     background-color: #B34F93;
 }
 
-.contenedor-2 img {
-    width: 100%;
+.contenedor img {
+    width: 720%;
     height: 933px;
     border-radius: 50px 0 0 0;
     /* Redondeado de la imagen */
 }
 
-/*form*/
-
-
-
-.prueba1 {
-    background-color: black;
-
+.contenedor {
+    /* Color de fondo */
+    background-color: #B34F93;
+    border: 10px solid #B34F93;
+    /* Espacio para el borde */
+    border-radius: 50px 0 0 0;
+    /* Redondeado del borde */
+    overflow: hidden;
+    /* Asegura que la imagen se recorte en los bordes redondeados */
+    display: flex;
 }
-
-
 
 
 /*FORMULARIO DE CONTACTO*/
@@ -857,30 +764,29 @@ textarea {
 }
 
 .galeria {
-    height: 100vh;
+    height: 1303;
     background-color: #F7ECF5;
-
 }
 
-.carousel-container h4 {
-    font-size: 25px;
-    color: #251520;
+
+.carousel-item {
+    position: relative;
+    /* Necesario para posicionar elementos absolutos dentro */
 }
 
-.inicio-carousel {
-    padding-left: 75px;
+.carousel-item h4 {
+    transition: opacity 0.5s ease;
 }
 
-.inicio-carousel h2 {
-    color: #B34F93;
-    margin-top: 30px;
+.carousel-item:hover h4 {
+    opacity: 0;
+    /* Oculta el título al hacer hover */
 }
 
 .inicio-carousel p {
     font-size: 30px;
     color: #B34F93;
     margin-top: 20px;
-
 }
 
 .carousel-container {
@@ -890,9 +796,7 @@ textarea {
     justify-content: center;
     width: 100%;
     position: relative;
-    padding: 20px;
-    margin-top: 50px;
-
+    margin-top: 10px;
 }
 
 .carousel {
@@ -916,6 +820,28 @@ textarea {
     text-align: center;
 }
 
+
+.carousel-container h4 {
+    font-size: 25px;
+    color: #F7ECF5;
+    position: relative;
+    top: -40px;
+    font-size: 22px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.inicio-carousel {
+    padding-left: 75px;
+    padding-bottom: 95px;
+}
+
+.inicio-carousel h2 {
+    color: #B34F93;
+    margin-top: 30px;
+
+}
+
 .carousel-item img {
     width: 254px;
     height: 412px;
@@ -926,16 +852,21 @@ textarea {
     /* Borde derecho */
     border-top: 5px solid #B34F93;
     /* Borde superior */
-    border-bottom: 35px solid #B34F93;
+    border-bottom: 45px solid #B34F93;
     /* Borde inferior más grande y de otro color */
     transition: filter 0.3s ease;
     /* Animación suave al cambiar el filtro */
 }
 
 .carousel-item img:hover {
-    filter: contrast(70%);
     color: #6b286d;
 
+}
+
+.image-container:hover .overlay {
+    opacity: 0.7;
+    /* Ajusta la opacidad al hacer hover */
+    color: #6b286d;
 }
 
 
@@ -946,20 +877,28 @@ textarea {
     font-weight: bold;
 }
 
+
+
 .ver-mas {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 16px;
-    background-color: #ff5f7e;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    font-family: 'Arial', sans-serif;
+    position: absolute;
+    bottom: 37px;
+    /* Ajusta según la posición deseada */
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    opacity: 0;
+    /* Oculto inicialmente */
+    text-decoration: underline;
+    font-weight: 700;
+    color: var(--Rosi-clarito, #F7ECF5);
+    font-family: "Neulis Cursive";
+    transition: opacity 0.5s ease;
+    font-size: 25px;
+    font-weight: 700;
 }
 
-.ver-mas:hover {
-    background-color: #7F3565;
-    cursor: pointer;
+.carousel-item:hover .ver-mas {
+    opacity: 1;
+    /* Muestra el botón "Ver más" al hacer hover */
 }
 
 button {
