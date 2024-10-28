@@ -13,7 +13,6 @@
     list-style: none;
     font-family: "elza", sans-serif;
     scroll-behavior: smooth;
-
 }
 
 body,
@@ -22,7 +21,6 @@ html {
 }
 
 /* INDEX.HTML*/
-
 
 #botonera {
     display: flex;
