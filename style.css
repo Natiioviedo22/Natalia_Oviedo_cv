@@ -16,9 +16,11 @@
 
 }
 
-body, html {
-scroll-behavior: smooth;
+body,
+html {
+    scroll-behavior: smooth;
 }
+
 /* INDEX.HTML*/
 
 
@@ -403,7 +405,7 @@ h4 {
     font-size: 35px;
     color: #B34F93;
     max-width: 950px;
-    line-height: 1.3; 
+    line-height: 1.3;
 }
 
 
@@ -470,9 +472,14 @@ h4 {
     background-color: #ff80f9;
     width: 100%;
     height: 300px;
+    max-width: 280;
 }
 
-/*todos los h3*/
+
+.grid-item b{
+    max-width: 100px;
+}
+/*todos los h3*/ 
 h3 {
     font-size: 30px;
     font-family: "neulis-cursive", sans-serif;
@@ -835,6 +842,31 @@ textarea {
 .inicio-carousel {
     padding-left: 75px;
     padding-bottom: 95px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.avion-proyectos {
+    padding-right: 119px;
+    padding-top: 22px;
+}
+
+.avion-proyectos img {
+    /* decidir si lo quiero infinito o solo una vez*/
+    /*animation: mover-derecha 3s ease-in-out infinite; /* Duración de 2s, movimiento suave, se repite infinitamente */
+    animation: mover-derecha 2s ease-in-out forwards;
+}
+
+@keyframes mover-derecha {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(1300px);
+        /* Cambia el valor para ajustar la distancia */
+    }
 }
 
 .inicio-carousel h2 {
