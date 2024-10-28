@@ -442,14 +442,14 @@ h4 {
 
 .intereses img {
     margin-top: 90px;
+    padding-top: 50px;
 }
 
 /*SECTION INFORMACION PERSONAL */
 .informacion-personal {
     display: grid;
-    background-color: #1d5aa0;
-    grid-gap: 20px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 80px;
+    grid-template-columns: 143px 1fr 1fr 1fr;
     /* Por defecto, cuatro columnas */
 }
 
@@ -469,26 +469,28 @@ h4 {
 }
 
 .grid-item {
-    background-color: #ff80f9;
     width: 100%;
     height: 300px;
-    max-width: 280;
+    max-width: 250;
+    color: #B34F93;
+}
+.grid-item.uno {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 60px;
+    padding-left: 77px;
 }
 
 
-.grid-item b{
-    max-width: 100px;
-}
+.grid-item.dos {
+    max-width: 280px;
+} 
+
 /*todos los h3*/ 
 h3 {
     font-size: 30px;
     font-family: "neulis-cursive", sans-serif;
 
-}
-
-.div.grid-item.a {
-    display: flex;
-    align-items: flex-end;
 }
 
 
@@ -637,6 +639,8 @@ body {
     color: #B34F93;
     align-items: flex-end;
     height: auto;
+    padding-top: 20px;
+
 
 
 }
@@ -683,7 +687,7 @@ body {
 
 .aviso {
     display: flex;
-    width: 100%;
+    width: 64%;
     justify-content: space-evenly;
 
 }
