@@ -683,8 +683,6 @@ body {
 }
 
 
-.formulario {}
-
 .aviso {
     display: flex;
     width: 64%;
@@ -755,10 +753,12 @@ label {
 
 .borrar {
     background-color: #F7ECF5;
+    color: #B34F93;
 }
 
 .enviar {
     background-color: #B34F93;
+    color: #F7ECF5;
 }
 
 textarea {
@@ -766,8 +766,14 @@ textarea {
     width: 100%;
     height: 200px;
     margin-bottom: 20px;
+    border: 4px solid #B34F93;
+    border-radius: 40px;
 }
 
+.botones-form {
+    display: flex;
+
+}
 
 /* MIS PROYECTOS/ CARROUSEL*/
 
