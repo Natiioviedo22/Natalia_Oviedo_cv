@@ -13,9 +13,8 @@
     list-style: none;
     font-family: "elza", sans-serif;
     scroll-behavior: smooth;
+    cursor: url(img/iconos/cursor22.png), auto;
 }
-
-
 /*********** INDEX.HTML***********/
 
 #botonera {

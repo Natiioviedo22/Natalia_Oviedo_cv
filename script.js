@@ -20,3 +20,4 @@ function moveSlide(direction) {
     const offset = -currentIndex * (100 / itemsToShow); // Calcular el desplazamiento basado en el número de elementos visibles
     carouselTrack.style.transform = `translateX(${offset}%)`;
 }
+
