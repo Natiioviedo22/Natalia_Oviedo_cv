@@ -15,12 +15,8 @@
     scroll-behavior: smooth;
 }
 
-body,
-html {
-    scroll-behavior: smooth;
-}
 
-/* INDEX.HTML*/
+/*********** INDEX.HTML***********/
 
 #botonera {
     display: flex;
@@ -130,9 +126,9 @@ html {
     }
 }
 
-/*MAIN*/
-.main {
-    background-color: #F1D9ED
+/*************MAIN**************/
+.body {
+    background-color: #F7ECF5
 }
 
 /*COMIENZO DE SECCION 1 */
@@ -156,7 +152,7 @@ h1 {
 
 .saludo h1 {
     font-weight: 700;
-    color: #F1D9ED;
+    color: #F7ECF5;
     display: flex;
     margin-top: 30px;
     letter-spacing: 4px;
@@ -177,12 +173,12 @@ h2 {
 
 
 .saludo2 h2 {
-    color: #F1D9ED;
+    color: #F7ECF5;
     margin-top: 30px;
     font-weight: 400;
 }
 
-/*COMIENZO SECCION 2- invitacion DATOS*/
+/*****COMIENZO SECCION 2- invitacion DATOS*****/
 /*pantalla completa*/
 #sobre-mi {
     height: 100vh;
@@ -238,7 +234,7 @@ h2 {
     letter-spacing: 1px;
 }
 
-/*SALUDO FINAL*/
+/*******SALUDO FINAL******/
 .saludo-final {
     display: flex;
     justify-content: space-between;
@@ -288,9 +284,9 @@ h2 {
 }
 
 
-/*FOOTER iciop*/
+/******FOOTER********/
 
-/*redes fijas*/
+/*****redes fijas******/
 footer {}
 
 .redes {
@@ -306,7 +302,7 @@ footer {}
     margin-right: 5px;
 }
 
-/*COMIENZO FOOTER*/
+/****COMIENZO FOOTER****/
 
 .redes img {
     margin-top: 5px;
@@ -360,7 +356,7 @@ footer {}
 }
 
 
-/*HTML SOBRE MI*/
+/**************HTML SOBRE MI************/
 /*pantalla completa*/
 h4 {
     color: #B34F93;
@@ -407,7 +403,7 @@ h4 {
 }
 
 
-/*Section intereses*/
+/******Section intereses*******/
 .intereses {
     width: 50%;
     padding: 95px 10px 95px 0x;
@@ -443,7 +439,7 @@ h4 {
     padding-top: 50px;
 }
 
-/*SECTION INFORMACION PERSONAL */
+/***********SECTION INFORMACION PERSONAL********/
 .informacion-personal {
     display: grid;
     grid-gap: 80px;
@@ -472,6 +468,7 @@ h4 {
     max-width: 250;
     color: #B34F93;
 }
+
 .grid-item.uno {
     display: flex;
     align-items: flex-end;
@@ -482,9 +479,9 @@ h4 {
 
 .grid-item.dos {
     max-width: 280px;
-} 
+}
 
-/*todos los h3*/ 
+/****todos los h3****/
 h3 {
     font-size: 30px;
     font-family: "neulis-cursive", sans-serif;
@@ -513,7 +510,7 @@ h3 {
     display: flex;
 }
 
-/*MIS PROYECTOS*/
+/**************MIS PROYECTOS****************/
 
 /*DETALLES DE MIS PROYECTOS*/
 /*OPCION 1*/
@@ -538,19 +535,16 @@ h3 {
 }
 
 .info-proyecto p {
-    max-width: 650px;
-    font-size: 30px;
+    max-width: 500px;
+    font-size: 25px;
     font-weight: 400;
     line-height: 40px;
 }
 
-.detalle-titulo {
-    position: relative;
-    top: -183px;
-    left: 12px;
-}
+
 
 .info-proyecto h2 {
+    font-size: 60px;
     font-weight: 300;
     color: #B34F93;
     margin-bottom: 20px;
@@ -566,16 +560,17 @@ h3 {
 }
 
 
-
+.boton-volver {
+    position: absolute;
+    top: 24px;
+    right: 10px;
+}
 
 .boton-visitar {
     display: flex;
     margin-top: 20px;
     /* Espacio entre el texto y el botón */
     justify-content: center;
-    position: absolute;
-    left: 320px;
-    top: 807px;
 
 }
 
@@ -604,10 +599,11 @@ h3 {
     background-color: #B34F93;
 }
 
+/*********tamaño de la imagen *******/
 .contenedor img {
-    width: 720%;
+    width: 1300px;
     height: 933px;
-    border-radius: 50px 0 0 0;
+    border-radius: 0px 78px 0px 0px;
     /* Redondeado de la imagen */
 }
 
@@ -616,7 +612,7 @@ h3 {
     background-color: #B34F93;
     border: 10px solid #B34F93;
     /* Espacio para el borde */
-    border-radius: 50px 0 0 0;
+    border-radius: 0px 78px 0px 0px;
     /* Redondeado del borde */
     overflow: hidden;
     /* Asegura que la imagen se recorte en los bordes redondeados */
@@ -624,9 +620,9 @@ h3 {
 }
 
 
-/*FORMULARIO DE CONTACTO*/
-body {
-    background-color: #F7ECF5;
+/*************FORMULARIO DE CONTACTO**************/
+.body-formulario {
+    height: 100vh;   /**esto no me funciona:(*/
 }
 
 .contenedor-formulario {
@@ -696,7 +692,7 @@ form {
 }
 
 input {
-    background-color: #F1D9ED;
+    background-color: #F7ECF5;
     width: 100%;
     height: 50px;
     margin-bottom: 25px;
@@ -780,8 +776,9 @@ textarea {
     box-sizing: border-box;
 }
 
+
 .galeria {
-    height: 1303;
+height: 100vh;
     background-color: #F7ECF5;
 }
 
@@ -813,7 +810,6 @@ textarea {
     justify-content: center;
     width: 100%;
     position: relative;
-    margin-top: 10px;
 }
 
 .carousel {
@@ -852,7 +848,7 @@ textarea {
     padding-left: 75px;
     padding-bottom: 95px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
 
 }
 
@@ -861,21 +857,9 @@ textarea {
     padding-top: 22px;
 }
 
-.avion-proyectos img {
-    /* decidir si lo quiero infinito o solo una vez*/
-    /*animation: mover-derecha 3s ease-in-out infinite; /* Duración de 2s, movimiento suave, se repite infinitamente */
-    animation: mover-derecha 2s ease-in-out forwards;
-}
-
-@keyframes mover-derecha {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(1300px);
-        /* Cambia el valor para ajustar la distancia */
-    }
+.ilustracion2 {
+    margin-top: 10px;
+    padding-right: 20px;
 }
 
 .inicio-carousel h2 {
