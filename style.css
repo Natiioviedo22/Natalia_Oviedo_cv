@@ -15,9 +15,7 @@
     cursor: url(img/cursor/cursor.png), auto;
 }
 
-html {
-    scroll-behavior: smooth;
-}
+
 
 /*********** INDEX.HTML***********/
 
@@ -1069,7 +1067,42 @@ button:hover {
     }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
+
+    .informacion-personal {
+        grid-template-columns: 1fr;
+    }
+    
+    #botonera {
+        display: flex;
+    justify-content: space-around;
+    background-color: #D78FC6;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    }
+    
+.logo {
+    display: flex;
+    justify-content: space-around;
+}
+
+    .avion-2 {
+        display: none;
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;}
+
+    .botones a {
+        display: flex;
+        justify-content: space-around;
+        font-size: 25px;
+    }
+
+    }
     .hobbies {
         margin-top: 400px;
     }
