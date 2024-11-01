@@ -69,7 +69,6 @@ h3 {
     margin: 20px;
     padding: 20px 20px;
     /* Espacio interno del botón */
-    font-family: "elza", sans-serif;
     font-size: 20px;
     /* Tamaño del texto */
     color: #B34F93;
@@ -339,7 +338,6 @@ h3 {
 
 .mensaje h4 {
     color: #F7ECF5;
-    font-family: elza, sans-serif;
     font-size: 24px;
     font-weight: 400;
 
@@ -652,19 +650,18 @@ h3 {
     flex-direction: column;
     color: #B34F93;
     align-items: flex-end;
-    padding-top: 20px;
+    /*padding: 20px;*/
+    height: 100vh;
 }
 
+/******avion y texto*********/
 .aviso {
     display: flex;
-    width: 64%;
+    width: 100%;
     justify-content: space-evenly;
 }
 
 .formulario {
-    font-size: 20px;
-    margin-top: 30px;
-    display: flex;
     width: 100%;
 }
 
@@ -673,19 +670,18 @@ h3 {
 /*texto*/
 .formulario h3 {
     max-width: 550px;
-    font-family: Elza;
-    font-size: 50px;
     font-weight: 400;
     line-height: 70px;
     padding-left: 57px;
+    font-family: "elza", sans-serif
 }
 
 
 
 
 .info p {
-    font-size: 22px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 400;
     margin-bottom: 30px;
 }
 
@@ -705,11 +701,12 @@ h3 {
 form {
     display: flex;
     justify-content: space-between;
+    gap:20px;
 }
 
 input {
     background-color: #F7ECF5;
-    width: 100%;
+    width: 426px;
     height: 50px;
     margin-bottom: 25px;
     border-radius: 25px;
@@ -722,16 +719,18 @@ input {
 input [type="submit"],
 input [type="reset"] {
     height: 30px;
-    width: 30%;
+    width: 100%;
     background-color: #F7ECF5;
     display: flex;
     color: #F7ECF5;
-    padding: px;
+
 }
 
 label {
     display: block;
-    height: 25px;
+    height: 20px;
+    margin-bottom:10px;
+    width: 400px;
 }
 
 
@@ -743,21 +742,21 @@ label {
 }
 
 .info {
-    height: auto;
-    width: 470px;
     padding: 20px;
-    border-radius: 40px;
-    font-size: 25px;
+    font-size: 20px;
 
 }
 
+.info li {
+    padding-top: 10px;
+}
+
 .info2 {
-    width: 40%;
-    height: auto;
+    width: 400px;
     padding: 20px;
-    border-radius: 40px;
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 400;
+    padding: left 20px;
 }
 
 
@@ -783,6 +782,7 @@ textarea {
 
 .botones-form {
     display: flex;
+    gap:20px;
 
 }
 

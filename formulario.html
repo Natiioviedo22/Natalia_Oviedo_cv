@@ -29,22 +29,25 @@
                     height="161px">
             </div>
             <div class="formulario">
-                <div class="texto-lectura">
-                    <h3> ¿Te gustaría que trabajemos en un proyecto juntos? </h3>
-                </div>
                 <div class="campos">
+                    <h3> ¿Te gustaría que trabajemos en un proyecto juntos? </h3>
                     <form method="post"
                         action="mailto:natiioviedo92@gmail.com?subject=Hola%20Natalia email enviado desde el formulario"
                         target="_blank" enctype="text/plain">
                         <div class="info">
-                            <label for="Nombre"> Nombre y Apellido</label>
-                            <input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder=" Nombre completo"
-                                required>
-                            <label for="email">Correo electronico</label>
-                            <input type="email" name="email" id="Email" placeholder="Email" required>
-                            <label for="tel">Teléfono</label>
-                            <input type="tel" name="Telefono" id="Telefono" placeholder="(011)00000000">
-                            <p> *Los campos con asteriscos son obligatorios! </p>
+                            <ul>
+                                <li><label for="Nombre">*Nombre y Apellido</label>
+                                    <input type="text" name="Nombre" id="Nombre" maxlength="30"
+                                        placeholder=" Nombre completo" required>
+                                </li>
+                                <li><label for="email">*Correo electronico</label>
+                                    <input type="email" name="email" id="Email" placeholder="Email" required>
+                                </li>
+                                <li>
+                                    <label for="tel">*Teléfono</label>
+                                    <input type="tel" name="Telefono" id="Telefono" placeholder="(011)00000000">
+                                </li>
+                                <p> *campos obligatorios</p>
                         </div>
                         <div class="info2">
                             <label for="Mensaje">Mensaje</label>
