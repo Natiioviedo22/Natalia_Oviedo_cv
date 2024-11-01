@@ -293,7 +293,7 @@ h3 {
 
 .brillo-2 {
     top: 46%;
-    left:76%;
+    left: 76%;
     transform: translate(-50%, -50%);
     position: relative;
 }
@@ -396,21 +396,19 @@ h3 {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 #mipresentacion h2 {
-    color: #B34F93;
     letter-spacing: 5px;
-    font-weight: 400;
-    margin: left 100px;
-
+    padding-bottom: 15px;
 }
 
-.nombre {
-    display: flex;
-    align-items: center;
-    padding: 25px 15px;
-    justify-content: space-around;
+.avion-2 {
+    position: absolute;
+    top: 212px;
+    left: 7px;
+    z-index: 10;
 }
 
 .presentacion {
@@ -433,9 +431,27 @@ h3 {
 }
 
 
+.presentacion h3 {
+    font-weight: 400;
+}
+
+.mipresentacion img {
+    border-radius: 30px;
+    border: 15px solid #B34F93;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.mipresentacion img :hover {
+    transform: scale(1.1);
+    /* Aumenta el tamaño de la imagen al 110% al pasar el mouse */
+}
+
 /******Section intereses*******/
 .intereses {
     padding: 95px 10px 95px 0px;
+    height: 100vh;
 }
 
 .hobbies {
@@ -448,24 +464,35 @@ h3 {
 
 .titulo-hobbies p {
     font-size: 32px;
-    font-style: normal;
     color: #B34F93;
     padding-top: 10px;
 }
 
-.intereses ul {
+.titulo-hobbies ul {
+    display: flex;
+}
+
+/******intereses-con giiff*****/
+.intereses-giff {
     display: flex;
     justify-content: space-around;
 }
 
-.intereses li {
+
+.titulo-giff {
+    line-height: 24px;
+    margin-top: 20px;
+    display: flex;
+    gap:12px;
     font-family: "neulis-cursive", sans-serif;
     font-size: 40px;
     color: #B34F93;
-    font-weight: 700;
-    letter-spacing: 3px;
-    line-height: 24px;
-    margin-top: 20px;
+}
+
+.intereses-giff li {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
 }
 
 /*****************gifff**********************/
@@ -511,7 +538,8 @@ h3 {
 
 .negrita {
     font-weight: 700;
-    margin-top: 10px;
+    margin: 20px 0px 7px 0px;
+    font-size: 20px;
 }
 
 
@@ -847,7 +875,7 @@ textarea {
     font-weight: 300;
     font-style: normal;
     font-family: "neulis-cursive", sans-serif;
-    letter-spacing: 0,8 px;
+    letter-spacing: 0, 8 px;
 }
 
 
@@ -887,8 +915,10 @@ textarea {
     /* Borde superior */
     border-bottom: 45px solid #B34F93;
     /* Borde inferior más grande y de otro color */
-    transition: opacity 0.3s ease, border-color 0.3s ease; /* Suaviza la transición de opacidad y color del borde */
-    opacity: 0.9; /* Opacidad original */
+    transition: opacity 0.3s ease, border-color 0.3s ease;
+    /* Suaviza la transición de opacidad y color del borde */
+    opacity: 0.9;
+    /* Opacidad original */
 }
 
 
@@ -901,7 +931,8 @@ textarea {
     /* Borde superior */
     border-bottom: 45px solid #7F3565;
     color: var(--Rosi-clarito, #F7ECF5);
-    opacity: 1; /* Cambia la opacidad a 70% al hacer hover */
+    opacity: 1;
+    /* Cambia la opacidad a 70% al hacer hover */
 
 }
 
@@ -1005,7 +1036,7 @@ button:hover {
 }
 
 @media (max-width: 768px) {
-    .nombre {
+    .avion-2 {
         display: block;
         text-align: center;
     }
