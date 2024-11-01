@@ -390,6 +390,9 @@ h3 {
 
 
 
+#iframe-musica {
+    width: 50%;
+}
 
 
 #mipresentacion {
@@ -483,7 +486,7 @@ h3 {
     line-height: 24px;
     margin-top: 20px;
     display: flex;
-    gap:12px;
+    gap: 12px;
     font-family: "neulis-cursive", sans-serif;
     font-size: 40px;
     color: #B34F93;
@@ -552,94 +555,7 @@ h3 {
     display: flex;
 }
 
-/**************MIS PROYECTOS****************/
 
-/*DETALLES DE MIS PROYECTOS*/
-/*OPCION 1*/
-
-
-.detalle-galeria {
-    display: flex;
-    background-color: #F7ECF5;
-    justify-content: space-between;
-    align-items: center;
-    color: #B34F93;
-    position: relative;
-}
-
-.boton-atras {
-    background-color: none;
-}
-
-.info-proyecto {
-    padding: 30px;
-    gap: 30px;
-}
-
-.info-proyecto p {
-    max-width: 500px;
-    font-size: 25px;
-    font-weight: 400;
-    line-height: 40px;
-}
-
-
-
-.info-proyecto h2 {
-    font-size: 60px;
-    font-weight: 300;
-    color: #B34F93;
-    margin-bottom: 20px;
-}
-
-.info-proyecto h3 {
-    color: #F7ECF5;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 600;
-    color: #B34F93;
-    margin-bottom: 5px;
-}
-
-
-.boton-volver {
-    position: absolute;
-    top: 24px;
-    right: 10px;
-}
-
-.boton-visitar {
-    display: flex;
-    margin-top: 20px;
-    /* Espacio entre el texto y el botón */
-    justify-content: center;
-
-}
-
-.boton-visitar a {
-    margin: 20px;
-    padding: 8px;
-    width: 175px;
-    /* Ajusta el valor según el largo que prefieras */
-    text-align: center;
-    /* Alinea el texto al centro */
-    font-size: 30px;
-    border-radius: 38px;
-    border: 2px solid #B34F93;
-    color: #B34F93;
-    cursor: pointer;
-    letter-spacing: 1px;
-    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
-    text-decoration: none;
-    /* Para que se vea como botón */
-    transition: all 0.3s ease;
-    /* Suaviza la transición */
-}
-
-.boton-visitar a:hover {
-    color: #F7ECF5;
-    background-color: #B34F93;
-}
 
 /*********tamaño de la imagen *******/
 .contenedor img {
@@ -662,7 +578,7 @@ h3 {
 }
 
 
-/*************FORMULARIO DE CONTACTO**************/
+/*****************************FORMULARIO DE CONTACTO****************************/
 
 
 .contenedor-formulario {
@@ -670,7 +586,7 @@ h3 {
     flex-direction: column;
     color: #B34F93;
     align-items: flex-end;
-    /*padding: 20px;*/
+    padding-top: 18px;
     height: 100vh;
 }
 
@@ -678,33 +594,31 @@ h3 {
 .aviso {
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding-bottom: 60px;
 }
 
 .formulario {
     width: 100%;
 }
 
-
+.titulo-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
 /*texto*/
-.formulario h3 {
+
+.titulo-form h3 {
     max-width: 550px;
     font-weight: 400;
     line-height: 70px;
     padding-left: 57px;
-    font-family: "elza", sans-serif
+    font-family: "elza", sans-serif;
+    text-align: center;
 }
-
-
-
-
-.info p {
-    font-size: 20px;
-    font-weight: 400;
-    margin-bottom: 30px;
-}
-
 
 .aviso h2 {
     line-height: 180px;
@@ -713,6 +627,15 @@ h3 {
     font-family: "neulis-cursive", sans-serif;
     display: flex;
 }
+
+
+.titulo-form p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+
 
 
 
@@ -755,10 +678,8 @@ label {
 
 
 .campos {
-    width: 100%;
     display: flex;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-around;
 }
 
 .info {
@@ -806,7 +727,7 @@ textarea {
 
 }
 
-/* MIS PROYECTOS/ CARROUSEL*/
+/*************** MIS PROYECTOS/ CARROUSEL/galeria*******************************/
 
 * {
     box-sizing: border-box;
@@ -977,11 +898,102 @@ button.next {
 button:hover {
     background-color: #7F3565;
     /* Cambia el color al pasar el mouse */
+
 }
 
-#iframe-musica {
-    width: 50%;
+
+/**********************************MIS PROYECTOS***************************/
+
+/*DETALLES DE MIS PROYECTOS*/
+/*OPCION 1*/
+
+
+.detalle-galeria {
+    display: flex;
+    background-color: #F7ECF5;
+    justify-content: space-between;
+    align-items: center;
+    color: #B34F93;
+    position: relative;
 }
+
+.boton-atras {
+    background-color: none;
+}
+
+.info-proyecto {
+    padding: 30px;
+    gap: 30px;
+}
+
+.info-proyecto p {
+    max-width: 500px;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+
+
+.info-proyecto h2 {
+    font-size: 60px;
+    font-weight: 300;
+    color: #B34F93;
+    margin-bottom: 20px;
+}
+
+.info-proyecto h3 {
+    color: #F7ECF5;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    color: #B34F93;
+    margin-bottom: 5px;
+}
+
+
+.boton-volver {
+    position: absolute;
+    top: 24px;
+    right: 10px;
+}
+
+.boton-visitar {
+    display: flex;
+    margin-top: 20px;
+    /* Espacio entre el texto y el botón */
+    justify-content: center;
+
+}
+
+.boton-visitar a {
+    margin: 20px;
+    padding: 8px;
+    width: 175px;
+    /* Ajusta el valor según el largo que prefieras */
+    text-align: center;
+    /* Alinea el texto al centro */
+    font-size: 30px;
+    border-radius: 38px;
+    border: 2px solid #B34F93;
+    color: #B34F93;
+    cursor: pointer;
+    letter-spacing: 1px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    /* Para que se vea como botón */
+    transition: all 0.3s ease;
+    /* Suaviza la transición */
+}
+
+.boton-visitar a:hover {
+    color: #F7ECF5;
+    background-color: #B34F93;
+}
+
+
+/*****************************responsive********************/
+/*seccion-sobremi*/
 
 @media (max-width: 1350px) {
     .redes {
