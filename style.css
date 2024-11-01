@@ -12,7 +12,7 @@
     text-decoration: none;
     list-style: none;
     font-family: "elza", sans-serif;
-    cursor: url(img/iconos/cursor22.png), auto;
+    cursor: url(img/cursor/cursor.png), auto;
 }
 
 html {
@@ -182,9 +182,7 @@ h3 {
 
 
 .saludo h1 {
-    font-weight: 700;
     color: #F7ECF5;
-    display: flex;
     margin-top: 30px;
     letter-spacing: 4px;
     /*espaciado de letras*/
@@ -215,9 +213,7 @@ h3 {
 }
 
 #sobre-mi h2 {
-    font-weight: 600;
     padding: 0px 80px;
-    color: #B34F93;
 }
 
 /*botones secuandarios*/
@@ -228,7 +224,7 @@ h3 {
 
 .botones-secundarios a {
     margin: 20px;
-    padding: 20px 20px;
+    padding: 20px 30px;
     /* Espacio interno del botón */
     font-family: "neulis-cursive", sans-serif;
     font-size: 36px;
@@ -244,7 +240,7 @@ h3 {
 
 .botones-secundarios a:hover {
     margin: 20px;
-    padding: 20px 20px;
+    padding: 20px 30px;
     font-family: "neulis-cursive", sans-serif;
     /* Espacio interno del botón */
     font-size: 36px;
@@ -297,7 +293,7 @@ h3 {
 
 .brillo-2 {
     top: 46%;
-    left: 84%;
+    left:76%;
     transform: translate(-50%, -50%);
     position: relative;
 }
@@ -305,7 +301,7 @@ h3 {
 
 .brillo2-0 {
     top: 46%;
-    left: 48%;
+    left: 41%;
     transform: translate(-50%, -50%);
     position: relative;
 
@@ -360,12 +356,10 @@ h3 {
 .copy {
     padding: 10px;
     justify-content: center;
-    align-items: center;
     height: 39px;
     align-self: stretch;
     display: flex;
     align-items: flex-end;
-    width: 100%;
 }
 
 .copy h6 {
@@ -466,7 +460,6 @@ h3 {
 
 .intereses li {
     font-family: "neulis-cursive", sans-serif;
-    display: flex;
     font-size: 40px;
     color: #B34F93;
     font-weight: 700;
@@ -490,7 +483,6 @@ h3 {
 
 
 .grid-item {
-    width: 100%;
     height: 300px;
     color: #B34F93;
     margin-right: 20px;
@@ -701,7 +693,7 @@ h3 {
 form {
     display: flex;
     justify-content: space-between;
-    gap:20px;
+    gap: 20px;
 }
 
 input {
@@ -729,7 +721,7 @@ input [type="reset"] {
 label {
     display: block;
     height: 20px;
-    margin-bottom:10px;
+    margin-bottom: 10px;
     width: 400px;
 }
 
@@ -782,7 +774,7 @@ textarea {
 
 .botones-form {
     display: flex;
-    gap:20px;
+    gap: 20px;
 
 }
 
@@ -808,10 +800,6 @@ textarea {
     transition: opacity 0.5s ease;
 }
 
-.carousel-item:hover h4 {
-    opacity: 0;
-    /* Oculta el título al hacer hover */
-}
 
 .inicio-carousel p {
     font-size: 30px;
@@ -858,7 +846,10 @@ textarea {
     font-size: 22px;
     font-weight: 300;
     font-style: normal;
+    font-family: "neulis-cursive", sans-serif;
+    letter-spacing: 0,8 px;
 }
+
 
 .inicio-carousel {
     padding-left: 75px;
@@ -896,13 +887,12 @@ textarea {
     /* Borde superior */
     border-bottom: 45px solid #B34F93;
     /* Borde inferior más grande y de otro color */
-    transition: opacity 0.3s ease;
-    opacity: 0.9;
+    transition: opacity 0.3s ease, border-color 0.3s ease; /* Suaviza la transición de opacidad y color del borde */
+    opacity: 0.9; /* Opacidad original */
 }
 
 
 .carousel-item img:hover {
-    color: #F7ECF5;
     border: 5px solid #7F3565;
     /* Borde izquierdo */
     border-right: 5px solid #7F3565;
@@ -910,10 +900,11 @@ textarea {
     border-top: 5px solid #7F3565;
     /* Borde superior */
     border-bottom: 45px solid #7F3565;
-
-    opacity: 1;
+    color: var(--Rosi-clarito, #F7ECF5);
+    opacity: 1; /* Cambia la opacidad a 70% al hacer hover */
 
 }
+
 
 .image-container:hover .overlay {
     opacity: 0.7;
@@ -929,29 +920,6 @@ textarea {
     font-weight: bold;
 }
 
-
-
-.ver-mas {
-    position: absolute;
-    bottom: 41px;
-    /* Ajusta según la posición deseada */
-    transform: translateX(-50%);
-    padding: 10px 20px;
-    opacity: 0;
-    /* Oculto inicialmente */
-    text-decoration: underline;
-    font-weight: 700;
-    color: var(--Rosi-clarito, #F7ECF5);
-    font-family: "neulis-cursive", sans-serif;
-    transition: opacity 0.5s ease;
-    font-size: 22px;
-    font-weight: 700;
-}
-
-.carousel-item:hover .ver-mas {
-    opacity: 1;
-    /* Muestra el botón "Ver más" al hacer hover */
-}
 
 button {
     background-color: #B34F93;
@@ -1014,18 +982,19 @@ button:hover {
     }
 }
 
-@media (max-width: 1200px) { 
+@media (max-width: 1200px) {
     .informacion-personal {
         grid-gap: 25px;
         grid-template-columns: 75px 1fr 1fr 1fr;
     }
 }
 
-@media (max-width: 992px) { 
+@media (max-width: 992px) {
     .informacion-personal {
         grid-template-columns: repeat(2, 1fr);
         margin-left: 20px;
     }
+
     .grid-item.uno {
         display: none;
     }
@@ -1040,6 +1009,7 @@ button:hover {
         display: block;
         text-align: center;
     }
+
     .hobbies {
         display: block;
         text-align: center;
@@ -1059,19 +1029,24 @@ button:hover {
     .hobbies {
         margin-top: 400px;
     }
+
     .informacion-personal {
         text-align: center;
     }
+
     .intereses ul {
         display: block;
         text-align: center;
     }
-    .intereses li{
+
+    .intereses li {
         display: block;
     }
+
     .grid-item.dos {
         max-width: 100%;
     }
+
     .info-lista2 {
         justify-content: center;
     }
