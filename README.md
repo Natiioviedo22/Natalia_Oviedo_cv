@@ -1,4 +1,5 @@
-El objetivo de este proyecto fue desarrollar un currículum en formato web utilizando HTML y CSS, con el fin de presentar información importante sobre mi experiencia, habilidades y formación como diseñadora. A través de este CV interactivo, lo que quiero lograr destacar mis capacidades en diseño visual y web, ofreciendo una experiencia de usuario intuitiva y atractiva. ¡Este trabajo se pudo desarrollar gracias al equipo de Compu 3!
+El objetivo de este proyecto fue desarrollar un curriculum que ahora muto a porfolio, en formato web utilizando HTML y CSS. Lo fui creando con el fin presentar información importante sobre, habilidades y formación como diseñadora. A través de este Portfolio  interactivo, he podido adquirir habilidad con respecto a el funcionamiento del codigo en visual y tambien a utilizar la herramienta figma.
+
 
 El tamaño de la pantalla que estoy utilizando es de 1920x1080
 El editor de código utilizado es: Visual Estudio Code
