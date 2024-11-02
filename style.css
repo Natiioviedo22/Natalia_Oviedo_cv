@@ -992,14 +992,8 @@ button:hover {
 
 
 
-@media  screen and  (max-width: 1200px) {
-    .informacion-personal {
-        grid-gap: 25px;
-        grid-template-columns: 75px 1fr 1fr 1fr;
-    }
-}
 
-@media  screen and  (max-width: 992px) {
+@media screen and (max-width: 992px) {
     .informacion-personal {
         grid-template-columns: repeat(2, 1fr);
         margin-left: 20px;
@@ -1009,9 +1003,6 @@ button:hover {
         display: none;
     }
 
-    .gif {
-        display: none;
-    }
 }
 
 @media  screen and  (max-width: 768px) {
@@ -1070,7 +1061,6 @@ button:hover {
         font-size: 25px;
     }
 
-    }
     .hobbies {
         margin-top: 400px;
     }
@@ -1082,6 +1072,8 @@ button:hover {
     .intereses ul {
         display: block;
         text-align: center;
+        display: flex;
+
     }
 
     .intereses li {
